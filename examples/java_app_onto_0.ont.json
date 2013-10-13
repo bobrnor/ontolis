@@ -1,0 +1,325 @@
+{
+  "last_id": 53,
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Class declaration",
+      "position_x": 755.4011863425910,
+      "position_y": 200.0
+    },
+    {
+      "id": 2,
+      "name": "Class declaration begin keyword",
+      "position_x": 534.6770833333330,
+      "position_y": 374.9510995370381
+    },
+    {
+      "id": 4,
+      "name": "class",
+      "position_x": 513.4813571035140,
+      "position_y": 498.3692264949350
+    },
+    {
+      "id": 6,
+      "name": "Class modifiers",
+      "position_x": 202.0,
+      "position_y": 427.7323495370381
+    },
+    {
+      "id": 8,
+      "name": "Composite class modifier",
+      "position_x": 507.5817910521780,
+      "position_y": 590.3973651907882
+    },
+    {
+      "id": 10,
+      "name": "Class modifiers separator",
+      "position_x": 509.9445793246050,
+      "position_y": 715.9024118180141
+    },
+    {
+      "id": 12,
+      "name": ",",
+      "position_x": 499.9396904368459,
+      "position_y": 859.5671431616012
+    },
+    {
+      "id": 14,
+      "name": "Single class modifier",
+      "position_x": 200.0,
+      "position_y": 563.7323495370381
+    },
+    {
+      "id": 16,
+      "name": "public",
+      "position_x": 0.0,
+      "position_y": 0.0
+    },
+    {
+      "id": 18,
+      "name": "Class name",
+      "position_x": 728.6337025300661,
+      "position_y": 381.6142382382170
+    },
+    {
+      "id": 20,
+      "name": "MyJavaClass",
+      "position_x": 0.0,
+      "position_y": 0.0
+    },
+    {
+      "id": 22,
+      "name": "Interfaces designation",
+      "position_x": 1423.670908543075,
+      "position_y": 432.1231915509261
+    },
+    {
+      "id": 24,
+      "name": "Interface type list",
+      "position_x": 1434.332945580112,
+      "position_y": 635.6901041666670
+    },
+    {
+      "id": 26,
+      "name": "Interface type",
+      "position_x": 1437.106512560042,
+      "position_y": 768.3439712838386
+    },
+    {
+      "id": 28,
+      "name": "Type name",
+      "position_x": 1438.217421853261,
+      "position_y": 902.5007233796301
+    },
+    {
+      "id": 30,
+      "name": "IMyFirstJavaInterface",
+      "position_x": 0.0,
+      "position_y": 0.0
+    },
+    {
+      "id": 32,
+      "name": "IMySecondJavaInterface",
+      "position_x": 0.0,
+      "position_y": 0.0
+    },
+    {
+      "id": 34,
+      "name": "Interface types separator",
+      "position_x": 1723.104550267211,
+      "position_y": 638.0106336805561
+    },
+    {
+      "id": 36,
+      "name": ",",
+      "position_x": 1721.814690436846,
+      "position_y": 761.3900598282679
+    },
+    {
+      "id": 38,
+      "name": "Interfaces designation begin keyword",
+      "position_x": 1278.020941019807,
+      "position_y": 549.3162998780301
+    },
+    {
+      "id": 40,
+      "name": "implements",
+      "position_x": 1237.439690436846,
+      "position_y": 679.3588098282680
+    },
+    {
+      "id": 42,
+      "name": "Super class designation",
+      "position_x": 1046.910491876409,
+      "position_y": 424.7323495370381
+    },
+    {
+      "id": 44,
+      "name": "Class type",
+      "position_x": 1049.910491876409,
+      "position_y": 633.7323495370381
+    },
+    {
+      "id": 46,
+      "name": "Type name",
+      "position_x": 1046.996067686594,
+      "position_y": 780.3461371527789
+    },
+    {
+      "id": 48,
+      "name": "MySuperJavaClass",
+      "position_x": 0.0,
+      "position_y": 0.0
+    },
+    {
+      "id": 50,
+      "name": "Super class designation begin keyword",
+      "position_x": 896.4500607421501,
+      "position_y": 546.5140335648150
+    },
+    {
+      "id": 52,
+      "name": "extends",
+      "position_x": 812.9605237701790,
+      "position_y": 722.3275598282680
+    }
+  ],
+  "relations": [
+    {
+      "destination_node_id": 1,
+      "id": 3,
+      "name": "a_part_of",
+      "source_node_id": 2
+    },
+    {
+      "destination_node_id": 2,
+      "id": 5,
+      "name": "is_instance",
+      "source_node_id": 4
+    },
+    {
+      "destination_node_id": 1,
+      "id": 7,
+      "name": "optional",
+      "source_node_id": 6
+    },
+    {
+      "destination_node_id": 6,
+      "id": 9,
+      "name": "is_a",
+      "source_node_id": 8
+    },
+    {
+      "destination_node_id": 8,
+      "id": 11,
+      "name": "a_part_of",
+      "source_node_id": 10
+    },
+    {
+      "destination_node_id": 10,
+      "id": 13,
+      "name": "is_instance",
+      "source_node_id": 12
+    },
+    {
+      "destination_node_id": 6,
+      "id": 15,
+      "name": "is_a",
+      "source_node_id": 14
+    },
+    {
+      "destination_node_id": 14,
+      "id": 17,
+      "name": "is_instance",
+      "source_node_id": 16
+    },
+    {
+      "destination_node_id": 1,
+      "id": 19,
+      "name": "a_part_of",
+      "source_node_id": 18
+    },
+    {
+      "destination_node_id": 18,
+      "id": 21,
+      "name": "is_instance",
+      "source_node_id": 20
+    },
+    {
+      "destination_node_id": 1,
+      "id": 23,
+      "name": "optional",
+      "source_node_id": 22
+    },
+    {
+      "destination_node_id": 22,
+      "id": 25,
+      "name": "a_part_of",
+      "source_node_id": 24
+    },
+    {
+      "destination_node_id": 24,
+      "id": 27,
+      "name": "is_element",
+      "source_node_id": 26
+    },
+    {
+      "destination_node_id": 26,
+      "id": 29,
+      "name": "a_part_of",
+      "source_node_id": 28
+    },
+    {
+      "destination_node_id": 28,
+      "id": 31,
+      "name": "is_instance",
+      "source_node_id": 30
+    },
+    {
+      "destination_node_id": 28,
+      "id": 33,
+      "name": "is_instance",
+      "source_node_id": 32
+    },
+    {
+      "destination_node_id": 24,
+      "id": 35,
+      "name": "a_part_of",
+      "source_node_id": 34
+    },
+    {
+      "destination_node_id": 34,
+      "id": 37,
+      "name": "is_instance",
+      "source_node_id": 36
+    },
+    {
+      "destination_node_id": 22,
+      "id": 39,
+      "name": "a_part_of",
+      "source_node_id": 38
+    },
+    {
+      "destination_node_id": 38,
+      "id": 41,
+      "name": "is_instance",
+      "source_node_id": 40
+    },
+    {
+      "destination_node_id": 1,
+      "id": 43,
+      "name": "optional",
+      "source_node_id": 42
+    },
+    {
+      "destination_node_id": 42,
+      "id": 45,
+      "name": "a_part_of",
+      "source_node_id": 44
+    },
+    {
+      "destination_node_id": 44,
+      "id": 47,
+      "name": "a_part_of",
+      "source_node_id": 46
+    },
+    {
+      "destination_node_id": 46,
+      "id": 49,
+      "name": "is_instance",
+      "source_node_id": 48
+    },
+    {
+      "destination_node_id": 42,
+      "id": 51,
+      "name": "a_part_of",
+      "source_node_id": 50
+    },
+    {
+      "destination_node_id": 50,
+      "id": 53,
+      "name": "is_instance",
+      "source_node_id": 52
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+   "files" : [
+      {
+         "categories" : [],
+         "name" : "objc_onto.ont",
+         "ontology" : {
+            "last_id" : 0,
+            "nodes" : [],
+            "relations" : []
+         },
+         "path" : "/Users/bobrnor/Documents/PSU/Projects/OntoEditor/examples/objc_onto.ont"
+      }
+   ]
+}

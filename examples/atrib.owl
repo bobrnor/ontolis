@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Тут определены два типа связей для атрибутов (прямая и обратная)
+     Введен специальный тип атрибута числового типа (DoubleAttributeExt). Для такого атрибута могут заданы значения для минимума, максимума, среднего (можно расширить)</rdfs:comment>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:ID="hasattribute">
+    <rdfs:range rdf:resource="#AttributeExt"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="attributeof"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:ID="DoubleAttributeExt">
+    <rdfs:subClassOf rdf:resource="#AttributeExt"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="AttributeMin">
+    <rdfs:domain rdf:resource="#DoubleAttributeExt"/>
+    <rdfs:range rdf:resource="double"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="AttributeMax">
+    <rdfs:domain rdf:resource="#DoubleAttributeExt"/>
+    <rdfs:range rdf:resource="double"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="AttributeAvg">
+    <rdfs:domain rdf:resource="#DoubleAttributeExt"/>
+    <rdfs:range rdf:resource="double"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>

@@ -1,0 +1,21 @@
+{
+   "Class interface" : {
+      "Base class designation" : {
+         "Base class designation begin keyword" : ":",
+         "Base class name" : "MySuperJavaClass"
+      },
+      "Class interface declaration begin keyword" : "@interface",
+      "Class interface declaration end keyword" : "@end",
+      "Class name" : "MyJavaClass",
+      "Protocols designation" : {
+         "Protocol designation begin keyword" : "<",
+         "Protocol designation list" : {
+            "Protocol name" : [ "IMyFirstJavaInterface", "IMySecondJavaInterface" ],
+            "Protocol name list" : {
+               "Protocol names separator" : ","
+            }
+         },
+         "Protocols designation end keyword" : ">"
+      }
+   }
+}

@@ -1,0 +1,13 @@
+{
+	"Class property description" : {
+		"Type declaration" : {
+			"Primitive type" : {
+				"Numeric type" : {
+					"Integral type" : {
+						"16bit signed" : "short"
+					}
+				}
+			}
+		}
+	}
+}

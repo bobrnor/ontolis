@@ -1,0 +1,22 @@
+{
+	"Class property description" : {
+		"Type declaration" : {
+			"Primitive type" : {
+				"Numeric type" : {
+					"Integral type" : {
+						"8bit signed" : "byte"
+					}
+				}
+			}
+		},
+		"Var descriptors" : {
+			"Single var descriptor" : {
+				"Var descriptor ID (without init)" : {
+					"Var descriptor ID" : {
+						"Var descriptor ID (not array)" : "m_javaVariable"
+					}
+				}
+			}
+		}
+	}
+}

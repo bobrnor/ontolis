@@ -1,0 +1,13 @@
+{
+   "Class interface" : {
+      "Base class designation" : {
+         "Base class name" : "MySuperJavaClass"
+      },
+      "Class name" : "MyJavaClass",
+      "Protocols designation" : {
+         "Protocol designation list" : {
+            "Protocol name" : [ "IMyFirstJavaInterface", "IMySecondJavaInterface" ]
+         }
+      }
+   }
+}
