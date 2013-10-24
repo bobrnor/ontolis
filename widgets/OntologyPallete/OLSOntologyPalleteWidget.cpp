@@ -1,7 +1,7 @@
 #include "OLSOntologyPalleteWidget.h"
 
-#include "qjson/include/qjson/serializer.h"
-
+#include <QJsonDocument>
+#include <QJsonObject>
 #include <QStringList>
 #include <QMimeData>
 
@@ -44,7 +44,6 @@ QMimeData *OLSOntologyPalleteWidget::mimeData(const QList<QListWidgetItem *> ite
 
   QMimeData *data = QListWidget::mimeData(items);
   QVariant attrs = items[0]->data(Qt::UserRole);
-  QJson::Serializer serializer;
-  data->setData("application/node-attrs", serializer.serialize(attrs));
+  data->setData("application/node-attrs", QJsonDocument::fromVariant(attrs).toJson());
   return data;
 }

@@ -88,6 +88,8 @@ QVariant OLSProjectFile::serialize() const {
 
 void OLSProjectFile::deserialize(const QVariant &json) {
 
+  qDebug() << "Project file: " << json;
+
   QVariantMap jsonMap = json.toMap();
 
   m_name = jsonMap["name"].toString();

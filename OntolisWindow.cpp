@@ -276,8 +276,7 @@ void OntolisWindow::exportFileSlot() {
     tmpFile.setAutoRemove(true);
     tmpFile.open();
     QVariant json = file->ontologyController()->serialize();
-    QJson::Serializer serializer;
-    QByteArray data = serializer.serialize(json);
+    QByteArray data = QJsonDocument::fromVariant(json).toJson();
     tmpFile.write(data);
     tmpFile.flush();
 

@@ -1,9 +1,8 @@
 #ifndef OLSONTOLOGYNODEDATA_H
 #define OLSONTOLOGYNODEDATA_H
 
-#include <qjson/include/qjson/parser.h>
-#include <qjson/include/qjson/serializer.h>
-
+#include <QJsonDocument>
+#include <QJsonObject>
 #include <QString>
 #include <QList>
 #include <QVariantMap>
@@ -16,14 +15,16 @@ struct OLSOntologyNodeData {
 
     QString attributesAsText() const {
 
-      QJson::Serializer serializer;
-      return QString::fromLocal8Bit(serializer.serialize(attributes));
+      QJsonObject object = QJsonObject::fromVariantMap(attributes);
+      QJsonDocument document = QJsonDocument(object);
+      return QString::fromUtf8(document.toJson());
     }
 
     void setAttributesFromData(const QByteArray &data) {
 
-      QJson::Parser parser;
-      attributes = parser.parse(data).toMap();
+      QJsonDocument document = QJsonDocument::fromJson(data);
+      QJsonObject object = document.object();
+      attributes = object.toVariantMap();
     }
 };
 

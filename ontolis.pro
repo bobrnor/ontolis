@@ -4,9 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core gui widgets
 
 TARGET = ontolis
 TEMPLATE = app
@@ -53,8 +51,3 @@ HEADERS  += OntolisWindow.h \
 FORMS    += OntolisWindow.ui \
     widgets/OntologyGraph/OLSOntologyGraphAttributeEditor.ui \
     widgets/OntologyGraph/OLSOntologyGraphWidget.ui
-
-macx: LIBS += -L/usr/local/bin/ -lqjson
-
-INCLUDEPATH += /usr/local/bin
-DEPENDPATH += /usr/local/bin

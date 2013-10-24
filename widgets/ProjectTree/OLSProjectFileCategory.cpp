@@ -1,5 +1,6 @@
 #include "OLSProjectFileCategory.h"
 
+#include <QDebug>
 #include <QVariantMap>
 
 OLSProjectFileCategory::OLSProjectFileCategory(QString name, OLSProjectFile *parentFile)
@@ -50,6 +51,8 @@ QVariant OLSProjectFileCategory::serialize() const {
 }
 
 void OLSProjectFileCategory::deserialize(const QVariant &json, OLSProjectFile *parentFile) {
+
+  qDebug() << "Project File Category: " << json;
 
   QVariantMap jsonMap = json.toMap();
   m_parentFile = parentFile;

@@ -1,6 +1,6 @@
 #include "OLSProject.h"
 
-#include <fstream>
+#include <QTextStream>
 
 OLSProject::OLSProject() {
 
@@ -22,10 +22,11 @@ OLSProjectFile *OLSProject::createFile() {
 
 OLSProjectFile *OLSProject::createFile(const QString &jsonString) {
 
+  qDebug() << "Project file: " << jsonString;
+
   if (jsonString.length() > 0) {
-    QJson::Parser parser;
     bool ok = false;
-    QVariant json = parser.parse(jsonString.toLocal8Bit(), &ok);
+    QVariant json = QJsonDocument::fromJson(jsonString.toUtf8());
     if (ok) {
       OLSProjectFile *newFile = new OLSProjectFile();
       newFile->ontologyController()->deserialize(json);
@@ -41,17 +42,18 @@ OLSProjectFile *OLSProject::openFile(const QString &path) {
 
   if (QFile::exists(path)) {
     QFile file(path);
-    QJson::Parser parser;
-    bool ok = false;
-    QVariant json = parser.parse(&file, &ok);
-
-    if (ok) {
-      QFileInfo fileInfo(path);
-      OLSProjectFile *newFile = new OLSProjectFile(path, fileInfo.fileName());
-      newFile->ontologyController()->deserialize(json);
-      m_files.append(newFile);
-      return newFile;
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+      return NULL;
     }
+
+    QJsonParseError err;
+    QVariant json = QJsonDocument::fromJson(file.readAll(), &err).toVariant();
+
+    QFileInfo fileInfo(path);
+    OLSProjectFile *newFile = new OLSProjectFile(path, fileInfo.fileName());
+    newFile->ontologyController()->deserialize(json);
+    m_files.append(newFile);
+    return newFile;
   }
 
   return NULL;
@@ -63,9 +65,7 @@ bool OLSProject::saveFile(OLSProjectFile *file, const QString &path) {
     QFile dstFile(path);
     if (dstFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
       QVariant json = file->ontologyController()->serialize();
-
-      QJson::Serializer serializer;
-      QByteArray data = serializer.serialize(json);
+      QByteArray data = QJsonDocument::fromVariant(json).toJson();
 
       dstFile.write(data);
 
@@ -120,6 +120,8 @@ QVariant OLSProject::serialize() const {
 
 void OLSProject::deserialize(const QVariant &json) {
 
+  qDebug() << "Project: " << json;
+
   m_files.clear();
 
   QVariantList filesJson = json.toMap()["files"].toList();
@@ -134,14 +136,13 @@ bool OLSProject::openProject(const QString &path) {
 
   if (QFile::exists(path)) {
     QFile file(path);
-    QJson::Parser parser;
-    bool ok = false;
-    QVariant json = parser.parse(&file, &ok);
-
-    if (ok) {
-      deserialize(json);
-      return true;
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+      return false;
     }
+
+    QVariant json = QJsonDocument::fromJson(file.readAll());
+    deserialize(json);
+    return true;
   }
 
   return false;
@@ -152,9 +153,7 @@ bool OLSProject::saveProject(const QString &path) {
   QFile file(path);
   if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
     QVariant jsonState = serialize();
-
-    QJson::Serializer serializer;
-    QByteArray data = serializer.serialize(jsonState);
+    QByteArray data = QJsonDocument::fromVariant(jsonState).toJson();
     file.write(data);
     return true;
   }
