@@ -98,9 +98,14 @@ void OntolisWindow::setupConverters() {
 
   QDir dir(QApplication::applicationDirPath() + "/../Scripts");
 
+  qDebug() << dir.path();
+
   foreach (QString fileName, dir.entryList(QDir::Files)) {
     if (fileName.contains("converter")) {
       QString cmd;
+#ifdef Q_OS_WIN32
+      cmd.append("python ");
+#endif
       cmd.append(dir.absoluteFilePath(fileName));
       cmd.append(" --method=supported_extensions");
 
@@ -177,6 +182,9 @@ void OntolisWindow::importSourceFileSlot() {
 
   if (converterPath.length() > 0) {
     QString cmd;
+#ifdef Q_OS_WIN32
+      cmd.append("python ");
+#endif
     cmd.append(converterPath);
     cmd.append(" --method=import");
     cmd.append(" --source-path=");
@@ -281,6 +289,9 @@ void OntolisWindow::exportFileSlot() {
     tmpFile.flush();
 
     QString cmd;
+#ifdef Q_OS_WIN32
+      cmd.append("python ");
+#endif
     cmd.append(converterPath);
     cmd.append(" --method=export");
     cmd.append(" --source-path=");
