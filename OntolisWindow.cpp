@@ -311,9 +311,13 @@ void OntolisWindow::exportFileSlot() {
 void OntolisWindow::screenshotSlot() {
 
   QString filePath = QFileDialog::getSaveFileName(this, tr("Save dialog"), QString(), "*.png");
-  OLSOntologyGraphWidget *widget = m_openOntologyWidgets[ui->tabWidget->currentIndex()];
-  QImage screenshot = widget->makeScreenshot();
-  screenshot.save(filePath);
+  if (filePath != NULL) {
+    if (ui->tabWidget->currentIndex() >= 0 && ui->tabWidget->currentIndex() < m_openOntologyWidgets.count()) {
+      OLSOntologyGraphWidget *widget = m_openOntologyWidgets[ui->tabWidget->currentIndex()];
+      QImage screenshot = widget->makeScreenshot();
+      screenshot.save(filePath);
+    }
+  }
 }
 
 void OntolisWindow::currentTabChangedSlot(int index) {
