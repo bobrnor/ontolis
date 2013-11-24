@@ -104,7 +104,9 @@ void OLSOntologyGraphNodeItem::paint(QPainter *painter, const QStyleOptionGraphi
   if (this->rect().isNull()) {
     if (m_name.length() > 0) {
       QFontMetrics metrics = painter->fontMetrics();
-      setRect(metrics.boundingRect(m_name));
+      QRect rect = metrics.boundingRect(m_name);
+      rect.adjust(0, 0, 20, 20);
+      setRect(rect);
     }
     else {
       setRect(QRectF(-60.0, -35.0, 120.0, 70.0));
