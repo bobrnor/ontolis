@@ -1,0 +1,1591 @@
+{
+    "last_id": "218",
+    "nodes": [
+        {
+            "attributes": {
+            },
+            "id": "1",
+            "name": "Class declaration",
+            "position_x": 767.45704163432197,
+            "position_y": 209.13859651354781
+        },
+        {
+            "attributes": {
+            },
+            "id": "3",
+            "name": "Class declaration begin keyword",
+            "position_x": 546.73293862506284,
+            "position_y": 384.0896960505861
+        },
+        {
+            "attributes": {
+            },
+            "id": "4",
+            "name": "Class name",
+            "position_x": 740.68955782179592,
+            "position_y": 390.75283475176502
+        },
+        {
+            "attributes": {
+            },
+            "id": "5",
+            "name": "Super class designation",
+            "position_x": 1058.966347168139,
+            "position_y": 433.8709460505861
+        },
+        {
+            "attributes": {
+            },
+            "id": "6",
+            "name": "Interfaces designation",
+            "position_x": 1435.726763834806,
+            "position_y": 441.26178806447302
+        },
+        {
+            "attributes": {
+            },
+            "id": "12",
+            "name": "Single class modifier",
+            "position_x": 212.05585529173001,
+            "position_y": 572.8709460505861
+        },
+        {
+            "attributes": {
+            },
+            "id": "13",
+            "name": "Composite class modifier",
+            "position_x": 519.63764634390895,
+            "position_y": 599.53596170433593
+        },
+        {
+            "attributes": {
+            },
+            "id": "14",
+            "name": "Class modifiers separator",
+            "position_x": 522.00043461633481,
+            "position_y": 725.04100833156099
+        },
+        {
+            "attributes": {
+            },
+            "id": "19",
+            "name": "Class body",
+            "position_x": 1696.6316394135099,
+            "position_y": 434.8709460505861
+        },
+        {
+            "attributes": {
+            },
+            "id": "22",
+            "name": "Super class designation begin keyword",
+            "position_x": 908.50591603387988,
+            "position_y": 555.65263007836302
+        },
+        {
+            "attributes": {
+            },
+            "id": "23",
+            "name": "Class type",
+            "position_x": 1061.966347168139,
+            "position_y": 642.8709460505861
+        },
+        {
+            "attributes": {
+            },
+            "id": "26",
+            "name": "Interfaces designation begin keyword",
+            "position_x": 1290.076796311537,
+            "position_y": 558.45489639157813
+        },
+        {
+            "attributes": {
+            },
+            "id": "27",
+            "name": "Interface type list",
+            "position_x": 1446.3888008718429,
+            "position_y": 644.82870068021384
+        },
+        {
+            "attributes": {
+            },
+            "id": "30",
+            "name": "Type name",
+            "position_x": 1059.051922978324,
+            "position_y": 789.48473366632697
+        },
+        {
+            "attributes": {
+            },
+            "id": "31",
+            "name": "Simple type name",
+            "position_x": 1062.2656093209171,
+            "position_y": 910.48719315706603
+        },
+        {
+            "attributes": {
+            },
+            "id": "32",
+            "name": "Id",
+            "position_x": 1063.864133626472,
+            "position_y": 1043.6668083191039
+        },
+        {
+            "attributes": {
+            },
+            "id": "36",
+            "name": "Interface type",
+            "position_x": 1449.1623678517731,
+            "position_y": 777.48256779738585
+        },
+        {
+            "attributes": {
+            },
+            "id": "37",
+            "name": "Interface types separator",
+            "position_x": 1735.160405558941,
+            "position_y": 647.14923019410389
+        },
+        {
+            "attributes": {
+            },
+            "id": "40",
+            "name": "Type name",
+            "position_x": 1450.273277144991,
+            "position_y": 911.63931989317803
+        },
+        {
+            "attributes": {
+            },
+            "id": "41",
+            "name": "Simple type name",
+            "position_x": 1452.3415337900369,
+            "position_y": 1031.6178282341459
+        },
+        {
+            "attributes": {
+            },
+            "id": "42",
+            "name": "Id",
+            "position_x": 1459.795351777675,
+            "position_y": 1156.5982210041691
+        },
+        {
+            "attributes": {
+            },
+            "id": "46",
+            "name": "Class interface",
+            "position_x": 2759.3142713809139,
+            "position_y": 200
+        },
+        {
+            "attributes": {
+            },
+            "id": "47",
+            "name": "Class interface declaration begin keyword",
+            "position_x": 2038.117649329412,
+            "position_y": 407.12941759840709
+        },
+        {
+            "attributes": {
+            },
+            "id": "48",
+            "name": "Class name",
+            "position_x": 2254.015535158323,
+            "position_y": 277.85555167789698
+        },
+        {
+            "attributes": {
+            },
+            "id": "49",
+            "name": "Base class designation",
+            "position_x": 2442.4572856336622,
+            "position_y": 403.29681441068902
+        },
+        {
+            "attributes": {
+            },
+            "id": "50",
+            "name": "Protocols designation",
+            "position_x": 2804.6382868730152,
+            "position_y": 397.54790962911193
+        },
+        {
+            "attributes": {
+            },
+            "id": "51",
+            "name": "Class interface declaration end keyword",
+            "position_x": 3238.9971953927829,
+            "position_y": 392.4024471895259
+        },
+        {
+            "attributes": {
+            },
+            "id": "57",
+            "name": "Id",
+            "position_x": 2164.715079244203,
+            "position_y": 545.04916244253991
+        },
+        {
+            "attributes": {
+            },
+            "id": "59",
+            "name": "Base class designation begin keyword",
+            "position_x": 2374.1992069183748,
+            "position_y": 544.57683328328903
+        },
+        {
+            "attributes": {
+            },
+            "id": "60",
+            "name": "Base class name",
+            "position_x": 2549.3919869960041,
+            "position_y": 543.6321749647891
+        },
+        {
+            "attributes": {
+            },
+            "id": "61",
+            "name": "Id",
+            "position_x": 2550.8363579283641,
+            "position_y": 660.97191639258108
+        },
+        {
+            "attributes": {
+            },
+            "id": "65",
+            "name": "Protocol designation begin keyword",
+            "position_x": 2738.1615849672971,
+            "position_y": 540.29888589317898
+        },
+        {
+            "attributes": {
+            },
+            "id": "66",
+            "name": "Protocol designation list",
+            "position_x": 2921.3034043793582,
+            "position_y": 539.40819748839294
+        },
+        {
+            "attributes": {
+            },
+            "id": "67",
+            "name": "Protocols designation end keyword",
+            "position_x": 3117.3194509828008,
+            "position_y": 539.43518244525194
+        },
+        {
+            "attributes": {
+            },
+            "id": "68",
+            "name": "Protocol name",
+            "position_x": 2784.7736620561182,
+            "position_y": 664.85848949401407
+        },
+        {
+            "attributes": {
+            },
+            "id": "69",
+            "name": "Protocol name list",
+            "position_x": 3093.392573602187,
+            "position_y": 662.0245145385129
+        },
+        {
+            "attributes": {
+            },
+            "id": "70",
+            "name": "Protocol names separator",
+            "position_x": 3100.5044959477968,
+            "position_y": 801.33426190353794
+        },
+        {
+            "attributes": {
+            },
+            "id": "78",
+            "name": "Id",
+            "position_x": 2789.3484439716649,
+            "position_y": 802.85918920872109
+        },
+        {
+            "attributes": {
+            },
+            "id": "84",
+            "name": "Id",
+            "position_x": 721.65171117493787,
+            "position_y": 554.37401290183197
+        },
+        {
+            "attributes": {
+            },
+            "id": "97",
+            "name": ",",
+            "position_x": 511.99554572857602,
+            "position_y": 868.70573967514906
+        },
+        {
+            "attributes": {
+            },
+            "id": "99",
+            "name": "extends",
+            "position_x": 825.01637906190876,
+            "position_y": 731.46615634181489
+        },
+        {
+            "attributes": {
+            },
+            "id": "101",
+            "name": "implements",
+            "position_x": 1249.495545728576,
+            "position_y": 688.49740634181489
+        },
+        {
+            "attributes": {
+            },
+            "id": "103",
+            "name": "class",
+            "position_x": 525.53721239524384,
+            "position_y": 507.50782300848192
+        },
+        {
+            "attributes": {
+            },
+            "id": "105",
+            "name": ",",
+            "position_x": 1733.870545728576,
+            "position_y": 770.52865634181489
+        },
+        {
+            "attributes": {
+            },
+            "id": "107",
+            "name": "@interface",
+            "position_x": 1946.110129061909,
+            "position_y": 516.62240634181489
+        },
+        {
+            "attributes": {
+            },
+            "id": "109",
+            "name": ":",
+            "position_x": 2278.141379061909,
+            "position_y": 674.17448967514792
+        },
+        {
+            "attributes": {
+            },
+            "id": "111",
+            "name": "<",
+            "position_x": 2537.255962395242,
+            "position_y": 840.84115634181603
+        },
+        {
+            "attributes": {
+            },
+            "id": "113",
+            "name": ">",
+            "position_x": 3331.526795728576,
+            "position_y": 753.60157300848186
+        },
+        {
+            "attributes": {
+            },
+            "id": "115",
+            "name": "@end",
+            "position_x": 3423.974712395242,
+            "position_y": 553.08073967514792
+        },
+        {
+            "attributes": {
+            },
+            "id": "117",
+            "name": "Class property description",
+            "position_x": 870.20873324098056,
+            "position_y": 1581.7080506392631
+        },
+        {
+            "attributes": {
+            },
+            "id": "118",
+            "name": "Type declaration",
+            "position_x": 727.15758578004193,
+            "position_y": 1739.064312846293
+        },
+        {
+            "attributes": {
+            },
+            "id": "119",
+            "name": "Var descriptors",
+            "position_x": 978.55051463196332,
+            "position_y": 1734.8506296651731
+        },
+        {
+            "attributes": {
+            },
+            "id": "120",
+            "name": "Primitive type",
+            "position_x": 728.50964301571094,
+            "position_y": 1901.6541054258
+        },
+        {
+            "attributes": {
+            },
+            "id": "121",
+            "name": "Single var descriptor",
+            "position_x": 983.25173900614527,
+            "position_y": 1900.101952236151
+        },
+        {
+            "attributes": {
+            },
+            "id": "122",
+            "name": "Numeric type",
+            "position_x": 724.22990278942484,
+            "position_y": 2057.5900730266321
+        },
+        {
+            "attributes": {
+            },
+            "id": "123",
+            "name": "Var descriptor ID (without init)",
+            "position_x": 984.80389219579456,
+            "position_y": 2060.495373614634
+        },
+        {
+            "attributes": {
+            },
+            "id": "124",
+            "name": "Var descriptor ID",
+            "position_x": 1273.9657286917379,
+            "position_y": 2060.5177560172501
+        },
+        {
+            "attributes": {
+            },
+            "id": "125",
+            "name": "Var descriptor ID (not array)",
+            "position_x": 1272.368810696855,
+            "position_y": 2222.4633305853808
+        },
+        {
+            "attributes": {
+            },
+            "id": "126",
+            "name": "Integral type",
+            "position_x": 584.5516505391829,
+            "position_y": 2235.1267625313599
+        },
+        {
+            "attributes": {
+            },
+            "id": "127",
+            "name": "Float type",
+            "position_x": 857.74430708629961,
+            "position_y": 2235.171527336593
+        },
+        {
+            "attributes": {
+            },
+            "id": "128",
+            "name": "32bit float",
+            "position_x": 776.68199019176791,
+            "position_y": 2402.0645327076859
+        },
+        {
+            "attributes": {
+            },
+            "id": "129",
+            "name": "64bit float",
+            "position_x": 996.02708296520586,
+            "position_y": 2397.2961611256551
+        },
+        {
+            "attributes": {
+            },
+            "id": "130",
+            "name": "8bit signed",
+            "position_x": 395.41370525281491,
+            "position_y": 2344.7993089180791
+        },
+        {
+            "attributes": {
+            },
+            "id": "131",
+            "name": "16bit signed",
+            "position_x": 392.30939887351502,
+            "position_y": 2467.2024344586248
+        },
+        {
+            "attributes": {
+            },
+            "id": "132",
+            "name": "32bit signed",
+            "position_x": 580.65619265918599,
+            "position_y": 2412.3476625672129
+        },
+        {
+            "attributes": {
+            },
+            "id": "133",
+            "name": "64bit signed",
+            "position_x": 398.54039403473189,
+            "position_y": 2582.7030927594669
+        },
+        {
+            "attributes": {
+            },
+            "id": "136",
+            "name": "byte",
+            "position_x": 200,
+            "position_y": 2349.5676805001099
+        },
+        {
+            "attributes": {
+            },
+            "id": "137",
+            "name": "short",
+            "position_x": 200.0447648052309,
+            "position_y": 2465.7174284768239
+        },
+        {
+            "attributes": {
+            },
+            "id": "138",
+            "name": "int",
+            "position_x": 580.13362998988396,
+            "position_y": 2538.5937137733958
+        },
+        {
+            "attributes": {
+            },
+            "id": "139",
+            "name": "long",
+            "position_x": 200.11191201308,
+            "position_y": 2592.2846007287631
+        },
+        {
+            "attributes": {
+            },
+            "id": "160",
+            "name": "float",
+            "position_x": 779.76055168418588,
+            "position_y": 2537.4071318694332
+        },
+        {
+            "attributes": {
+            },
+            "id": "161",
+            "name": "double",
+            "position_x": 1003.091476971523,
+            "position_y": 2539.4684063111322
+        },
+        {
+            "attributes": {
+            },
+            "id": "164",
+            "name": "struct_decl",
+            "position_x": 2422.518505380754,
+            "position_y": 1419.749061591082
+        },
+        {
+            "attributes": {
+            },
+            "id": "165",
+            "name": "spec_qualifier_list",
+            "position_x": 2197.7867937460542,
+            "position_y": 1553.6317834160091
+        },
+        {
+            "attributes": {
+            },
+            "id": "166",
+            "name": "struct_declarator_list",
+            "position_x": 2594.653433441375,
+            "position_y": 1548.850257636547
+        },
+        {
+            "attributes": {
+            },
+            "id": "167",
+            "name": "type_spec",
+            "position_x": 2193.0052679665928,
+            "position_y": 1711.4221341382449
+        },
+        {
+            "attributes": {
+            },
+            "id": "168",
+            "name": "struct_declarator",
+            "position_x": 2585.0903818824522,
+            "position_y": 1697.0775567998601
+        },
+        {
+            "attributes": {
+            },
+            "id": "169",
+            "name": "numeric type",
+            "position_x": 2178.6606906282091,
+            "position_y": 1864.430959081019
+        },
+        {
+            "attributes": {
+            },
+            "id": "170",
+            "name": "declarator",
+            "position_x": 2561.182752985143,
+            "position_y": 1845.3048559631729
+        },
+        {
+            "attributes": {
+            },
+            "id": "171",
+            "name": "direct_declarator",
+            "position_x": 2832.1796946050999,
+            "position_y": 1845.3048559631729
+        },
+        {
+            "attributes": {
+            },
+            "id": "172",
+            "name": "id",
+            "position_x": 2848.074299752845,
+            "position_y": 1988.7506293470231
+        },
+        {
+            "attributes": {
+            },
+            "id": "173",
+            "name": "Integral type",
+            "position_x": 2049.5594945827429,
+            "position_y": 1988.7506293470231
+        },
+        {
+            "attributes": {
+            },
+            "id": "174",
+            "name": "Float type",
+            "position_x": 2269.5096804379809,
+            "position_y": 1979.1875777881
+        },
+        {
+            "attributes": {
+            },
+            "id": "175",
+            "name": "32bit float",
+            "position_x": 2331.6695155709822,
+            "position_y": 2113.0702996130271
+        },
+        {
+            "attributes": {
+            },
+            "id": "176",
+            "name": "64bit float",
+            "position_x": 2589.8719076619132,
+            "position_y": 2117.851825392489
+        },
+        {
+            "attributes": {
+            },
+            "id": "177",
+            "name": "float",
+            "position_x": 2336.4510413504449,
+            "position_y": 2246.9530214379538
+        },
+        {
+            "attributes": {
+            },
+            "id": "178",
+            "name": "double",
+            "position_x": 2613.7795365592228,
+            "position_y": 2256.516072996877
+        },
+        {
+            "attributes": {
+            },
+            "id": "179",
+            "name": "8bit signed",
+            "position_x": 2055.4135802345859,
+            "position_y": 2129.0237167599848
+        },
+        {
+            "attributes": {
+            },
+            "id": "180",
+            "name": "16bit signed",
+            "position_x": 2035.2149172443569,
+            "position_y": 2270.860650335263
+        },
+        {
+            "attributes": {
+            },
+            "id": "181",
+            "name": "32bit signed",
+            "position_x": 2049.5594945827429,
+            "position_y": 2366.4911659244958
+        },
+        {
+            "attributes": {
+            },
+            "id": "182",
+            "name": "64bit signed",
+            "position_x": 2078.2486492595131,
+            "position_y": 2498.8238599400629
+        },
+        {
+            "attributes": {
+            },
+            "id": "183",
+            "name": "char",
+            "position_x": 1824.827782948043,
+            "position_y": 2122.6333511719508
+        },
+        {
+            "attributes": {
+            },
+            "id": "184",
+            "name": "short",
+            "position_x": 1820.04625716858,
+            "position_y": 2242.1714956584929
+        },
+        {
+            "attributes": {
+            },
+            "id": "185",
+            "name": "int",
+            "position_x": 1812.6193965250191,
+            "position_y": 2372.6304089005948
+        },
+        {
+            "attributes": {
+            },
+            "id": "186",
+            "name": "long",
+            "position_x": 1814.7555874403811,
+            "position_y": 2511.1249418554048
+        },
+        {
+            "attributes": {
+            },
+            "id": "210",
+            "name": "id",
+            "position_x": 1452.387631303038,
+            "position_y": 2217.0382884784349
+        }
+    ],
+    "relations": [
+        {
+            "attributes": {
+            },
+            "destination_node_id": "1",
+            "id": "8",
+            "name": "a_part_of",
+            "source_node_id": "3"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "1",
+            "id": "9",
+            "name": "a_part_of",
+            "source_node_id": "4"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "1",
+            "id": "10",
+            "name": "optional",
+            "source_node_id": "5"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "1",
+            "id": "11",
+            "name": "optional",
+            "source_node_id": "6"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "13",
+            "id": "17",
+            "name": "a_part_of",
+            "source_node_id": "14"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "13",
+            "id": "18",
+            "name": "is_element",
+            "source_node_id": "12"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "1",
+            "id": "21",
+            "name": "a_part_of",
+            "source_node_id": "19"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "5",
+            "id": "24",
+            "name": "a_part_of",
+            "source_node_id": "22"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "5",
+            "id": "25",
+            "name": "a_part_of",
+            "source_node_id": "23"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "6",
+            "id": "28",
+            "name": "a_part_of",
+            "source_node_id": "26"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "6",
+            "id": "29",
+            "name": "a_part_of",
+            "source_node_id": "27"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "23",
+            "id": "33",
+            "name": "a_part_of",
+            "source_node_id": "30"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "30",
+            "id": "34",
+            "name": "is_a",
+            "source_node_id": "31"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "27",
+            "id": "38",
+            "name": "is_element",
+            "source_node_id": "36"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "27",
+            "id": "39",
+            "name": "a_part_of",
+            "source_node_id": "37"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "36",
+            "id": "43",
+            "name": "a_part_of",
+            "source_node_id": "40"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "40",
+            "id": "44",
+            "name": "is_a",
+            "source_node_id": "41"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "46",
+            "id": "52",
+            "name": "a_part_of",
+            "source_node_id": "48"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "46",
+            "id": "53",
+            "name": "optional",
+            "source_node_id": "50"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "46",
+            "id": "54",
+            "name": "a_part_of",
+            "source_node_id": "47"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "46",
+            "id": "55",
+            "name": "optional",
+            "source_node_id": "49"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "46",
+            "id": "56",
+            "name": "a_part_of",
+            "source_node_id": "51"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "49",
+            "id": "62",
+            "name": "a_part_of",
+            "source_node_id": "59"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "49",
+            "id": "63",
+            "name": "a_part_of",
+            "source_node_id": "60"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "50",
+            "id": "71",
+            "name": "a_part_of",
+            "source_node_id": "65"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "50",
+            "id": "72",
+            "name": "a_part_of",
+            "source_node_id": "66"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "50",
+            "id": "73",
+            "name": "a_part_of",
+            "source_node_id": "67"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "66",
+            "id": "74",
+            "name": "is_a",
+            "source_node_id": "68"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "66",
+            "id": "75",
+            "name": "is_a",
+            "source_node_id": "69"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "69",
+            "id": "76",
+            "name": "is_element",
+            "source_node_id": "68"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "69",
+            "id": "77",
+            "name": "a_part_of",
+            "source_node_id": "70"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "48",
+            "id": "86",
+            "name": "transform",
+            "source_node_id": "4"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "48",
+            "id": "89",
+            "name": "is_a",
+            "source_node_id": "57"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "60",
+            "id": "90",
+            "name": "is_a",
+            "source_node_id": "61"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "68",
+            "id": "91",
+            "name": "is_a",
+            "source_node_id": "78"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "31",
+            "id": "92",
+            "name": "is_a",
+            "source_node_id": "32"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "41",
+            "id": "93",
+            "name": "is_a",
+            "source_node_id": "42"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "4",
+            "id": "94",
+            "name": "is_a",
+            "source_node_id": "84"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "60",
+            "id": "95",
+            "name": "transform",
+            "source_node_id": "30"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "68",
+            "id": "96",
+            "name": "transform",
+            "source_node_id": "40"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "14",
+            "id": "98",
+            "name": "is_instance",
+            "source_node_id": "97"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "22",
+            "id": "100",
+            "name": "is_instance",
+            "source_node_id": "99"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "26",
+            "id": "102",
+            "name": "is_instance",
+            "source_node_id": "101"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "3",
+            "id": "104",
+            "name": "is_instance",
+            "source_node_id": "103"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "37",
+            "id": "106",
+            "name": "is_instance",
+            "source_node_id": "105"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "47",
+            "id": "108",
+            "name": "is_instance",
+            "source_node_id": "107"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "59",
+            "id": "110",
+            "name": "is_instance",
+            "source_node_id": "109"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "65",
+            "id": "112",
+            "name": "is_instance",
+            "source_node_id": "111"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "67",
+            "id": "114",
+            "name": "is_instance",
+            "source_node_id": "113"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "51",
+            "id": "116",
+            "name": "is_instance",
+            "source_node_id": "115"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "117",
+            "id": "140",
+            "name": "a_part_of",
+            "source_node_id": "118"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "117",
+            "id": "141",
+            "name": "a_part_of",
+            "source_node_id": "119"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "119",
+            "id": "142",
+            "name": "is_a",
+            "source_node_id": "121"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "121",
+            "id": "143",
+            "name": "is_a",
+            "source_node_id": "123"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "123",
+            "id": "144",
+            "name": "is_a",
+            "source_node_id": "124"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "124",
+            "id": "145",
+            "name": "is_a",
+            "source_node_id": "125"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "122",
+            "id": "146",
+            "name": "is_a",
+            "source_node_id": "127"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "122",
+            "id": "147",
+            "name": "is_a",
+            "source_node_id": "126"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "127",
+            "id": "148",
+            "name": "is_a",
+            "source_node_id": "128"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "127",
+            "id": "149",
+            "name": "is_a",
+            "source_node_id": "129"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "118",
+            "id": "150",
+            "name": "is_a",
+            "source_node_id": "120"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "120",
+            "id": "151",
+            "name": "is_a",
+            "source_node_id": "122"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "126",
+            "id": "152",
+            "name": "is_a",
+            "source_node_id": "130"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "126",
+            "id": "153",
+            "name": "is_a",
+            "source_node_id": "131"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "126",
+            "id": "154",
+            "name": "is_a",
+            "source_node_id": "132"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "126",
+            "id": "155",
+            "name": "is_a",
+            "source_node_id": "133"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "130",
+            "id": "156",
+            "name": "is_instance",
+            "source_node_id": "136"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "131",
+            "id": "157",
+            "name": "is_instance",
+            "source_node_id": "137"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "132",
+            "id": "158",
+            "name": "is_instance",
+            "source_node_id": "138"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "133",
+            "id": "159",
+            "name": "is_instance",
+            "source_node_id": "139"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "129",
+            "id": "162",
+            "name": "is_instance",
+            "source_node_id": "161"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "128",
+            "id": "163",
+            "name": "is_instance",
+            "source_node_id": "160"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "164",
+            "id": "187",
+            "name": "a_part_of",
+            "source_node_id": "165"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "164",
+            "id": "188",
+            "name": "a_part_of",
+            "source_node_id": "166"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "165",
+            "id": "189",
+            "name": "is_a",
+            "source_node_id": "167"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "166",
+            "id": "190",
+            "name": "is_a",
+            "source_node_id": "168"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "168",
+            "id": "191",
+            "name": "is_a",
+            "source_node_id": "170"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "170",
+            "id": "192",
+            "name": "is_a",
+            "source_node_id": "171"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "171",
+            "id": "193",
+            "name": "is_a",
+            "source_node_id": "172"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "167",
+            "id": "194",
+            "name": "is_a",
+            "source_node_id": "169"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "169",
+            "id": "195",
+            "name": "is_a",
+            "source_node_id": "173"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "169",
+            "id": "196",
+            "name": "is_a",
+            "source_node_id": "174"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "174",
+            "id": "197",
+            "name": "is_a",
+            "source_node_id": "175"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "175",
+            "id": "198",
+            "name": "is_instance",
+            "source_node_id": "177"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "174",
+            "id": "199",
+            "name": "is_a",
+            "source_node_id": "176"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "176",
+            "id": "200",
+            "name": "is_instance",
+            "source_node_id": "178"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "173",
+            "id": "201",
+            "name": "is_a",
+            "source_node_id": "179"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "173",
+            "id": "202",
+            "name": "is_a",
+            "source_node_id": "180"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "173",
+            "id": "203",
+            "name": "is_a",
+            "source_node_id": "181"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "173",
+            "id": "204",
+            "name": "is_a",
+            "source_node_id": "182"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "179",
+            "id": "206",
+            "name": "is_instance",
+            "source_node_id": "183"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "180",
+            "id": "207",
+            "name": "is_instance",
+            "source_node_id": "184"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "181",
+            "id": "208",
+            "name": "is_instance",
+            "source_node_id": "185"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "182",
+            "id": "209",
+            "name": "is_instance",
+            "source_node_id": "186"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "125",
+            "id": "211",
+            "name": "is_a",
+            "source_node_id": "210"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "171",
+            "id": "212",
+            "name": "transform",
+            "source_node_id": "125"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "175",
+            "id": "213",
+            "name": "type_transform",
+            "source_node_id": "128"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "176",
+            "id": "214",
+            "name": "type_transform",
+            "source_node_id": "129"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "179",
+            "id": "215",
+            "name": "type_transform",
+            "source_node_id": "130"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "180",
+            "id": "216",
+            "name": "type_transform",
+            "source_node_id": "131"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "181",
+            "id": "217",
+            "name": "type_transform",
+            "source_node_id": "132"
+        },
+        {
+            "attributes": {
+            },
+            "destination_node_id": "182",
+            "id": "218",
+            "name": "type_transform",
+            "source_node_id": "133"
+        }
+    ]
+}

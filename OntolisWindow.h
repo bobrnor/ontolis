@@ -59,6 +59,7 @@ class OntolisWindow : public QMainWindow {
     void createOntologyFileSlot();
     void openOntologyFileSlot();
     void saveOntologyFileSlot();
+    void saveOntologyAsFileSlot();
 
     void openProjectSlot();
     void saveProjectSlot();

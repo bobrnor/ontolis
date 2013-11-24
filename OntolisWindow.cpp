@@ -139,6 +139,7 @@ void OntolisWindow::setupMenu() {
   QAction *createOntologyFileAction = fileMenu->addAction(tr("Create ontology..."));
   QAction *openOntologyFileAction = fileMenu->addAction(tr("Open ontology..."));
   QAction *saveOntologyFileAction = fileMenu->addAction(tr("Save ontology..."));
+  QAction *saveOntologyAsFileAction = fileMenu->addAction(tr("Save ontology as..."));
 
   fileMenu->addSeparator();
 
@@ -162,6 +163,7 @@ void OntolisWindow::setupMenu() {
   connect(createOntologyFileAction, SIGNAL(triggered()), SLOT(createOntologyFileSlot()));
   connect(openOntologyFileAction, SIGNAL(triggered()), SLOT(openOntologyFileSlot()));
   connect(saveOntologyFileAction, SIGNAL(triggered()), SLOT(saveOntologyFileSlot()));
+  connect(saveOntologyAsFileAction, SIGNAL(triggered()), SLOT(saveOntologyAsFileSlot()));
 
   connect(openProjectAction, SIGNAL(triggered()), SLOT(openProjectSlot()));
   connect(saveProjectAction, SIGNAL(triggered()), SLOT(saveProjectSlot()));
@@ -243,6 +245,22 @@ void OntolisWindow::saveOntologyFileSlot() {
     QString filePath = QFileDialog::getSaveFileName(this, tr("Open dialog"), QString(), "*");
     m_currentProject.saveFile(file, filePath);
   }
+
+  ui->tabWidget->setTabText(index, file->name());
+  updateOntologyTreeData();
+  m_projectTreeViewController->updateData();
+}
+
+void OntolisWindow::saveOntologyAsFileSlot() {
+
+  int index = ui->tabWidget->currentIndex();
+  OLSProjectFile *file = m_currentProject.getProjectFileByIndex(index);
+  QString filePath = QFileDialog::getSaveFileName(this, tr("Open dialog"), QString(), "*");
+  m_currentProject.saveFile(file, filePath);
+
+  ui->tabWidget->setTabText(index, file->name());
+  updateOntologyTreeData();
+  m_projectTreeViewController->updateData();
 }
 
 void OntolisWindow::openProjectSlot() {
