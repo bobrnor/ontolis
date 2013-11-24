@@ -312,7 +312,7 @@ void OLSOntologyGraphWidget::editNodeSlot() {
 
       bool ok = false;
       QString newName = QInputDialog::getText(this,
-                                              tr("Enter new node name"),
+                                              tr("Enter node name"),
                                               tr("Name: "),
                                               QLineEdit::Normal,
                                               nodeItem->name(),
@@ -349,7 +349,7 @@ void OLSOntologyGraphWidget::editRelationSlot() {
       }
 
       QString newName = QInputDialog::getItem(this,
-                                              tr("Enter new node name"),
+                                              tr("Enter node name"),
                                               tr("Name: "),
                                               items,
                                               0,

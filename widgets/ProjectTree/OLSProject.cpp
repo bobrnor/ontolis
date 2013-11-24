@@ -25,16 +25,15 @@ OLSProjectFile *OLSProject::createFile(const QString &jsonString) {
   qDebug() << "Project file: " << jsonString;
 
   if (jsonString.length() > 0) {
-    bool ok = false;
-    QVariant json = QJsonDocument::fromJson(jsonString.toUtf8());
-    if (ok) {
+    QJsonParseError error;
+    QVariant json = QJsonDocument::fromJson(jsonString.toUtf8(), &error).toVariant();
+    if (error.error == QJsonParseError::NoError) {
       OLSProjectFile *newFile = new OLSProjectFile();
       newFile->ontologyController()->deserialize(json);
       m_files.append(newFile);
       return newFile;
     }
   }
-
   return NULL;
 }
 

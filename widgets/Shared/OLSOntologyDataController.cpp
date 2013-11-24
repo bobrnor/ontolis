@@ -104,12 +104,20 @@ QVariant OLSOntologyDataController::serialize() {
 
 void OLSOntologyDataController::deserialize(const QVariant &json) {
 
+  qDebug() << "Ontology data controller deserialization";
+
   m_jsonMap = json.toMap();
+
+  qDebug() << m_jsonMap;
+
   m_lastId = m_jsonMap["last_id"].toLongLong();
 
   QVariantList nodes = m_jsonMap["nodes"].toList();
   foreach (QVariant node, nodes) {
     QVariantMap nodeMap = node.toMap();
+
+    qDebug() << nodeMap;
+
     OLSOntologyNodeData *nodeData = new OLSOntologyNodeData();
     nodeData->id = nodeMap["id"].toLongLong();
     nodeData->name = nodeMap["name"].toString();
