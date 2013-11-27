@@ -8,7 +8,7 @@ QT       += core gui widgets
 
 TARGET = ontolis
 TEMPLATE = app
-
+RC_FILE = resources/resources.rc
 
 SOURCES += main.cpp\
         OntolisWindow.cpp \
@@ -51,3 +51,5 @@ HEADERS  += OntolisWindow.h \
 FORMS    += OntolisWindow.ui \
     widgets/OntologyGraph/OLSOntologyGraphAttributeEditor.ui \
     widgets/OntologyGraph/OLSOntologyGraphWidget.ui
+
+RESOURCES +=
