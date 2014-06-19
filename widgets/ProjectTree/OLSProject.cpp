@@ -72,6 +72,8 @@ bool OLSProject::saveFile(OLSProjectFile *file, const QString &path) {
       file->setName(fileInfo.fileName());
       file->setPath(path);
 
+      file->ontologyController()->clearChanges();
+
       return true;
     }
   }

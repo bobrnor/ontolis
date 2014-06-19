@@ -5,7 +5,6 @@ import sys
 import getopt
 
 reload(sys)
-sys.setdefaultencoding('utf-8')
 
 
 def print_supported_extensions():
@@ -19,17 +18,18 @@ def convert_to_internal_format(file_path):
 def convert_to_external_format(file_path):
     return ''
 
+
 if __name__ == '__main__':
     opts, extraparams = getopt.getopt(sys.argv[1:], '', ['method=', 'source-path='])
 
-    methodName = (item[1] for item in opts if item[0] == '--method').next()
-    if methodName == 'supported_extensions':
+    method_name = (item[1] for item in opts if item[0] == '--method').next()
+    if method_name == 'supported_extensions':
         print_supported_extensions()
-    elif methodName == 'import':
+    elif method_name == 'import':
         path = (item[1] for item in opts if item[0] == '--source-path').next()
         convert_to_internal_format(path)
-    elif  methodName == 'export':
+    elif method_name == 'export':
         path = (item[1] for item in opts if item[0] == '--source-path').next()
         convert_to_external_format(path)
     else:
-        print "Unknown method name " + methodName
+        print "Unknown method name " + method_name

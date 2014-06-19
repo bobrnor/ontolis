@@ -8,11 +8,11 @@ import re
 import json
 
 reload(sys)
-sys.setdefaultencoding('utf-8')
 random.seed()
 
-tokenRegExp = re.compile('(<.+?>\??)|(\w+\??)|([\{\},\.;\[\]\'\"])|(\+\+)|(\-\-)|(\*\=)|(\/\=)|(\%\=)|(\+\=)|(\-\=)|(\<\<\=)|(\>\>\=)|(\>\>\>\=)|(\&\=)|(\^\=)|(\|\=)|(\+)|(\-)|(\?)')
-nontermimalRegExp = re.compile('(<.+?>)\??')
+TOKEN_REG_EXP = re.compile('(<.+?>\??)|(\w+\??)|([\{\},\.;\[\]\'\"])|(\+\+)|(\-\-)|(\*\=)|(\/\=)|(\%\=)|(\+\=)|(\-\=)|(\<\<\=)|(\>\>\=)|(\>\>\>\=)|(\&\=)|(\^\=)|(\|\=)|(\+)|(\-)|(\?)')
+NONTERMINAL_REG_EXP = re.compile('(<.+?>)\??')
+
 next_object_id = 0
 nodes = []
 relations = []
@@ -25,7 +25,7 @@ def group(concept_definition):
 
 
 def tokenize(definition):
-    return [next(token for token in item if token != '') for item in tokenRegExp.findall(definition)]
+    return [next(token for token in item if token != '') for item in TOKEN_REG_EXP.findall(definition)]
 
 
 def find_node(name):
@@ -61,7 +61,7 @@ def process_subconcept(parent_node, subconcept):
     is_optional = len(subconcept) > 1 and subconcept.rfind('?') == len(subconcept) - 1
     subconcept = subconcept.strip('?')
 
-    if nontermimalRegExp.match(subconcept) is not None:
+    if NONTERMINAL_REG_EXP.match(subconcept) is not None:
         subconcept_node = get_node(subconcept)
         if is_optional:
             create_relation('optional', subconcept_node, parent_node)
@@ -121,14 +121,14 @@ def convert_to_external_format(file_path):
 if __name__ == '__main__':
     opts, extraparams = getopt.getopt(sys.argv[1:], '', ['method=', 'source-path='])
 
-    methodName = (item[1] for item in opts if item[0] == '--method').next()
-    if methodName == 'supported_extensions':
+    method_name = (item[1] for item in opts if item[0] == '--method').next()
+    if method_name == 'supported_extensions':
         print_supported_extensions()
-    elif methodName == 'import':
+    elif method_name == 'import':
         path = (item[1] for item in opts if item[0] == '--source-path').next()
         convert_to_internal_format(path)
-    elif  methodName == 'export':
+    elif  method_name == 'export':
         path = (item[1] for item in opts if item[0] == '--source-path').next()
         convert_to_external_format(path)
     else:
-        print "Unknown method name " + methodName
+        print "Unknown method name " + method_name

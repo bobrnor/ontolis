@@ -1,0 +1,80 @@
+Node created: Single class modifier
+Node created: Single class modifier #2685.83960601
+Relation `is_instance` between Single class modifier #2685.83960601 and Single class modifier created
+Node created: public
+Relation `is_instance` between public and Single class modifier #2685.83960601 created
+Node created: Class modifiers
+Relation `is_a` between Single class modifier and Class modifiers created
+Node created: Class modifiers #10166.7433829
+Relation `is_instance` between Class modifiers #10166.7433829 and Class modifiers created
+Relation `is_a` between Single class modifier #2685.83960601 and Class modifiers #10166.7433829 created
+Node created: Class declaration
+Relation `optional` between Class modifiers and Class declaration created
+Node created: Class declaration #13122.6830942
+Relation `is_instance` between Class declaration #13122.6830942 and Class declaration created
+Relation `optional` between Class modifiers #10166.7433829 and Class declaration #13122.6830942 created
+Node created: Class declaration begin keyword
+Relation `a_part_of` between Class declaration begin keyword and Class declaration created
+Node created: Class declaration begin keyword #6488.31690951
+Relation `is_instance` between Class declaration begin keyword #6488.31690951 and Class declaration begin keyword created
+Relation `a_part_of` between Class declaration begin keyword #6488.31690951 and Class declaration #13122.6830942 created
+Node created: class
+Relation `is_instance` between class and Class declaration begin keyword #6488.31690951 created
+Node created: Class name
+Relation `a_part_of` between Class name and Class declaration created
+Node created: Class name #8481.77418161
+Relation `is_instance` between Class name #8481.77418161 and Class name created
+Relation `a_part_of` between Class name #8481.77418161 and Class declaration #13122.6830942 created
+Node created: id
+Relation `is_a` between id and Class name created
+Node created: id #16480.0449309
+Relation `is_instance` between id #16480.0449309 and id created
+Relation `is_a` between id #16480.0449309 and Class name #8481.77418161 created
+Node created: SomeClass
+Relation `is_instance` between SomeClass and id #16480.0449309 created
+Node created: Super class designation
+Relation `optional` between Super class designation and Class declaration created
+Node created: Super class designation #7522.06691811
+Relation `is_instance` between Super class designation #7522.06691811 and Super class designation created
+Node created: Class declaration #10939.9025374
+Relation `is_instance` between Class declaration #10939.9025374 and Class declaration created
+Relation `optional` between Super class designation #7522.06691811 and Class declaration #10939.9025374 created
+Node created: Super class designation begin keyword
+Relation `a_part_of` between Super class designation begin keyword and Super class designation created
+Node created: Super class designation begin keyword #2022.72970383
+Relation `is_instance` between Super class designation begin keyword #2022.72970383 and Super class designation begin keyword created
+Relation `a_part_of` between Super class designation begin keyword #2022.72970383 and Super class designation #7522.06691811 created
+Node created: extends
+Relation `is_instance` between extends and Super class designation begin keyword #2022.72970383 created
+Node created: Super class designation #18840.8030208
+Relation `is_instance` between Super class designation #18840.8030208 and Super class designation created
+Relation `a_part_of` between Super class designation begin keyword #2022.72970383 and Super class designation #18840.8030208 created
+Node created: Class type
+Relation `a_part_of` between Class type and Super class designation created
+Node created: Class type #6012.53112913
+Relation `is_instance` between Class type #6012.53112913 and Class type created
+Relation `a_part_of` between Class type #6012.53112913 and Super class designation #7522.06691811 created
+Node created: Type name
+Relation `a_part_of` between Type name and Class type created
+Node created: Type name #5104.81006284
+Relation `is_instance` between Type name #5104.81006284 and Type name created
+Relation `a_part_of` between Type name #5104.81006284 and Class type #6012.53112913 created
+Node created: Simple type name
+Relation `is_a` between Simple type name and Type name created
+Node created: Simple type name #7991.28849567
+Relation `is_instance` between Simple type name #7991.28849567 and Simple type name created
+Relation `is_a` between Simple type name #7991.28849567 and Type name #5104.81006284 created
+Relation `is_a` between id and Simple type name created
+Node created: id #6221.43602021
+Relation `is_instance` between id #6221.43602021 and id created
+Relation `is_a` between id #6221.43602021 and Simple type name #7991.28849567 created
+Node created: SomeOtherClass
+Relation `is_instance` between SomeOtherClass and id #6221.43602021 created
+Node created: id #154.797415121
+Relation `is_instance` between id #154.797415121 and id created
+Node created: {
+Relation `is_instance` between { and id #154.797415121 created
+Node created: id #15891.2126297
+Relation `is_instance` between id #15891.2126297 and id created
+Node created: }
+Relation `is_instance` between } and id #15891.2126297 created

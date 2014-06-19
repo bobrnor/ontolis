@@ -163,10 +163,10 @@
   </widget>
   <widget class="QDockWidget" name="palleteDockWidget">
    <property name="features">
-    <set>QDockWidget::NoDockWidgetFeatures</set>
+    <set>QDockWidget::AllDockWidgetFeatures</set>
    </property>
    <property name="allowedAreas">
-    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+    <set>Qt::AllDockWidgetAreas</set>
    </property>
    <attribute name="dockWidgetArea">
     <number>2</number>

@@ -1,0 +1,157 @@
+{
+  "last_id": 25,
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Class property description",
+      "position_x": 836.4806088263119,
+      "position_y": 1317.153280909659
+    },
+    {
+      "id": 2,
+      "name": "Type declaration",
+      "position_x": 739.0152467484340,
+      "position_y": 1443.080636954601
+    },
+    {
+      "id": 4,
+      "name": "Primitive type",
+      "position_x": 738.4478693989561,
+      "position_y": 1573.394431753904
+    },
+    {
+      "id": 6,
+      "name": "Numeric type",
+      "position_x": 739.5172326515731,
+      "position_y": 1700.642144003032
+    },
+    {
+      "id": 8,
+      "name": "Integral type",
+      "position_x": 636.9454744284039,
+      "position_y": 1839.881396352509
+    },
+    {
+      "id": 10,
+      "name": "8bit signed",
+      "position_x": 454.7645556445959,
+      "position_y": 1840.410465821317
+    },
+    {
+      "id": 12,
+      "name": "byte",
+      "position_x": 229.260767571720,
+      "position_y": 1843.096848633063
+    },
+    {
+      "id": 14,
+      "name": "Var descriptors",
+      "position_x": 930.5687903729970,
+      "position_y": 1445.306552054950
+    },
+    {
+      "id": 16,
+      "name": "Single var descriptor",
+      "position_x": 932.8482211234636,
+      "position_y": 1574.233296241289
+    },
+    {
+      "id": 18,
+      "name": "Var descriptor ID (without init)",
+      "position_x": 938.9803862238127,
+      "position_y": 1699.942680798440
+    },
+    {
+      "id": 20,
+      "name": "Var descriptor ID",
+      "position_x": 1186.928349891317,
+      "position_y": 1691.465575763719
+    },
+    {
+      "id": 22,
+      "name": "Var descriptor ID (not array)",
+      "position_x": 1191.527473716579,
+      "position_y": 1826.373207971392
+    },
+    {
+      "id": 24,
+      "name": "m_javaVariable",
+      "position_x": 0.0,
+      "position_y": 0.0
+    }
+  ],
+  "relations": [
+    {
+      "destination_node_id": 1,
+      "id": 3,
+      "name": "a_part_of",
+      "source_node_id": 2
+    },
+    {
+      "destination_node_id": 2,
+      "id": 5,
+      "name": "is_a",
+      "source_node_id": 4
+    },
+    {
+      "destination_node_id": 4,
+      "id": 7,
+      "name": "is_a",
+      "source_node_id": 6
+    },
+    {
+      "destination_node_id": 6,
+      "id": 9,
+      "name": "is_a",
+      "source_node_id": 8
+    },
+    {
+      "destination_node_id": 8,
+      "id": 11,
+      "name": "is_a",
+      "source_node_id": 10
+    },
+    {
+      "destination_node_id": 10,
+      "id": 13,
+      "name": "is_instance",
+      "source_node_id": 12
+    },
+    {
+      "destination_node_id": 1,
+      "id": 15,
+      "name": "a_part_of",
+      "source_node_id": 14
+    },
+    {
+      "destination_node_id": 14,
+      "id": 17,
+      "name": "is_a",
+      "source_node_id": 16
+    },
+    {
+      "destination_node_id": 16,
+      "id": 19,
+      "name": "is_a",
+      "source_node_id": 18
+    },
+    {
+      "destination_node_id": 18,
+      "id": 21,
+      "name": "is_a",
+      "source_node_id": 20
+    },
+    {
+      "destination_node_id": 20,
+      "id": 23,
+      "name": "is_a",
+      "source_node_id": 22
+    },
+    {
+      "destination_node_id": 22,
+      "id": 25,
+      "name": "is_instance",
+      "source_node_id": 24
+    }
+  ]
+}
