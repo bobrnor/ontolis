@@ -9,6 +9,7 @@
 #include "widgets/OntologyPallete/OLSOntologyPalleteWidget.h"
 #include "widgets/ProjectTree/OLSProjectTreeViewController.h"
 #include "widgets/ProjectTree/OLSProject.h"
+#include "ontoliscategorywidget.h"
 
 namespace Ui {
 class OntolisWindow;
@@ -31,6 +32,7 @@ class OntolisWindow : public QMainWindow {
     QTreeView *m_logTreeView;
 
     OLSOntologyPalleteWidget *m_palleteWidget;
+    OntolisCategoryWidget *m_categoryWidget;
 
     OLSProjectTreeViewController *m_projectTreeViewController;
     OLSOntologyTreeViewController *m_ontologyTreeViewController;
@@ -68,6 +70,9 @@ class OntolisWindow : public QMainWindow {
     void screenshotSlot();
 
     void transformSlot();
+
+    void showOntologySlot();
+    void showSourceCodeSlot();
 
     void moveToStartSlot();
     void moveForwardSlot();

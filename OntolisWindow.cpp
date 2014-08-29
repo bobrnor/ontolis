@@ -28,6 +28,9 @@ OntolisWindow::OntolisWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::
   m_palleteWidget = new OLSOntologyPalleteWidget();
   ui->palleteLayout->addWidget(m_palleteWidget);
 
+  m_categoryWidget = new OntolisCategoryWidget();
+  ui->categoryLayout->addWidget(m_categoryWidget);
+
   m_zoomInShortcut = new QShortcut(this);
   m_zoomInShortcut->setKey(QKeySequence("Ctrl+="));
   m_zoomInShortcut->setEnabled(true);
@@ -96,7 +99,7 @@ void OntolisWindow::updateOntologyTreeData() {
 
 void OntolisWindow::setupConverters() {
 
-  QDir dir(QApplication::applicationDirPath() + "/../Scripts");
+  QDir dir("/Users/bobrnor/Dropbox/PSU/Projects/ontolis/Scripts");
 
   qDebug() << dir.path();
 
@@ -112,7 +115,7 @@ void OntolisWindow::setupConverters() {
       QProcess process;
       process.start(cmd, QIODevice::ReadOnly);
       process.waitForFinished();
-      QString result(process.readAllStandardOutput());
+      QString result(process.readAll());
       qDebug() << result;
 
       QStringList extensions = result.split(":");
@@ -125,37 +128,55 @@ void OntolisWindow::setupConverters() {
 
 void OntolisWindow::setupTransformators() {
 
-  // do nothing now
+    QDir dir("/Users/bobrnor/Dropbox/PSU/Projects/ontolis/Scripts");
+
+    qDebug() << dir.path();
+
+    foreach (QString fileName, dir.entryList(QDir::Files)) {
+      if (fileName.contains("transformator")) {
+        QString cmd;
+  #ifdef Q_OS_WIN32
+        cmd.append("python ");
+  #endif
+        cmd.append(dir.absoluteFilePath(fileName));
+        cmd.append(" --method=supported_extensions");
+
+        QProcess process;
+        process.start(cmd, QIODevice::ReadOnly);
+        process.waitForFinished();
+        QString result(process.readAll());
+        qDebug() << result;
+
+        QStringList extensions = result.split(":");
+        foreach (QString extension, extensions) {
+          m_transformatorsMapping.insert(extension.trimmed(), dir.absoluteFilePath(fileName));
+        }
+      }
+    }
 }
 
 void OntolisWindow::setupMenu() {
 
   QMenu *fileMenu = ui->menubar->addMenu(tr("File"));
-
   QAction *importSourceFileAction = fileMenu->addAction(tr("Import source file..."));
-
   fileMenu->addSeparator();
-
   QAction *createOntologyFileAction = fileMenu->addAction(tr("Create ontology..."));
   QAction *openOntologyFileAction = fileMenu->addAction(tr("Open ontology..."));
   QAction *saveOntologyFileAction = fileMenu->addAction(tr("Save ontology..."));
   QAction *saveOntologyAsFileAction = fileMenu->addAction(tr("Save ontology as..."));
-
   fileMenu->addSeparator();
-
   QAction *openProjectAction = fileMenu->addAction(tr("Open project..."));
   QAction *saveProjectAction = fileMenu->addAction(tr("Save project..."));
-
   fileMenu->addSeparator();
-
   QAction *exportFileAction = fileMenu->addAction(tr("Export file..."));
-
   fileMenu->addSeparator();
-
   QAction *screenshotAction = fileMenu->addAction(tr("Screenshot..."));
 
-  QMenu *transformationMenu = ui->menubar->addMenu(tr("Transformation"));
+  QMenu *viewMenu = ui->menubar->addMenu(tr("View"));
+  QAction *ontologyViewAction = viewMenu->addAction(tr("Show ontology"));
+  QAction *sourceViewAction = viewMenu->addAction(tr("Show source code"));
 
+  QMenu *transformationMenu = ui->menubar->addMenu(tr("Transformation"));
   QAction *transformAction = transformationMenu->addAction(tr("Transform"));
 
   connect(importSourceFileAction, SIGNAL(triggered()), SLOT(importSourceFileSlot()));
@@ -173,6 +194,9 @@ void OntolisWindow::setupMenu() {
   connect(screenshotAction, SIGNAL(triggered()), SLOT(screenshotSlot()));
 
   connect(transformAction, SIGNAL(triggered()), SLOT(transformSlot()));
+
+  connect(ontologyViewAction, SIGNAL(triggered()), SLOT(showOntologySlot()));
+  connect(sourceViewAction, SIGNAL(triggered()), SLOT(showSourceCodeSlot()));
 }
 
 void OntolisWindow::importSourceFileSlot() {
@@ -315,10 +339,14 @@ void OntolisWindow::exportFileSlot() {
     cmd.append(" --source-path=");
     cmd.append(tmpFile.fileName());
 
+    qDebug() << cmd;
+
     QProcess process;
     process.start(cmd, QIODevice::ReadOnly);
     process.waitForFinished();
-    QString result(process.readAllStandardOutput());
+    QString result(process.readAll());
+
+    qDebug() << result;
 
     QFile dstFile(filePath);
     dstFile.open(QIODevice::WriteOnly | QIODevice::Text);
@@ -345,6 +373,7 @@ void OntolisWindow::currentTabChangedSlot(int index) {
   clearConnections();
 
   m_ontologyTreeViewController->setDataController(widget->dataController());
+  m_categoryWidget->setWidget(widget);
 
   connect(widget, SIGNAL(dataChangedSignal()), m_ontologyTreeViewController, SLOT(dataChangedSlot()));
   connect(m_ontologyTreeViewController, SIGNAL(dataChangedSignal()), widget, SLOT(dataChangedSlot()));
@@ -396,6 +425,98 @@ void OntolisWindow::categorySelectedSlot(const QString &fileName, const QString 
 
 void OntolisWindow::transformSlot() {
 
+    int index = ui->tabWidget->currentIndex();
+    OLSProjectFile *file = m_currentProject.getProjectFileByIndex(index);
+
+    QString converterPath = "";
+    if (file->ontologyController()->findNode("##.java")) {
+        converterPath = m_transformatorsMapping[".java"];
+    }
+    else {
+        converterPath = m_transformatorsMapping[".m"];
+    }
+
+    QTemporaryFile tmpFile;
+    tmpFile.setAutoRemove(false);
+    tmpFile.open();
+    QVariant json = file->ontologyController()->serialize();
+    QByteArray data = QJsonDocument::fromVariant(json).toJson();
+    tmpFile.write(data);
+    tmpFile.flush();
+
+    QString cmd;
+#ifdef Q_OS_WIN32
+      cmd.append("python ");
+#endif
+    cmd.append(converterPath);
+    cmd.append(" --method=transform");
+    cmd.append(" --source-path=");
+    cmd.append(tmpFile.fileName());
+
+    qDebug() << cmd;
+
+    QProcess process;
+    process.start(cmd, QIODevice::ReadOnly);
+    process.waitForFinished();
+    QString result(process.readAll());
+
+//    qDebug() << result;
+
+    QTemporaryFile tmpDstFile;
+    tmpDstFile.setAutoRemove(false);
+    tmpDstFile.open();
+    tmpDstFile.write(result.toLocal8Bit());
+    tmpDstFile.flush();
+
+    if (file->ontologyController()->findNode("##.java")) {
+        converterPath = m_convertersMapping[".m"];
+    }
+    else {
+        converterPath = m_convertersMapping[".java"];
+    }
+
+    cmd.clear();
+#ifdef Q_OS_WIN32
+      cmd.append("python ");
+#endif
+    cmd.append(converterPath);
+    cmd.append(" --method=import");
+    cmd.append(" --source-path=");
+    cmd.append(tmpDstFile.fileName());
+
+    qDebug() << cmd;
+
+    QProcess otherProcess;
+    otherProcess.start(cmd, QIODevice::ReadOnly);
+    otherProcess.waitForFinished();
+    QString _result(otherProcess.readAllStandardOutput());
+
+    OLSProjectFile *_file = m_currentProject.createFile(_result);
+    if (_file != NULL) {
+      OLSOntologyGraphWidget *widget = createNewOntologyWidget(_file);
+      widget->dataChangedSlot();
+
+      updateOntologyTreeData();
+      m_projectTreeViewController->updateData();
+    }
+}
+
+void OntolisWindow::showOntologySlot() {
+
+    int index = ui->tabWidget->currentIndex();
+    if (index >= 0) {
+        OLSOntologyGraphWidget *widget = m_openOntologyWidgets[index];
+        widget->showOntologySlot();
+    }
+}
+
+void OntolisWindow::showSourceCodeSlot() {
+
+    int index = ui->tabWidget->currentIndex();
+    if (index >= 0) {
+        OLSOntologyGraphWidget *widget = m_openOntologyWidgets[index];
+        widget->showSourceCodeSlot();
+    }
 }
 
 void OntolisWindow::moveToStartSlot() {

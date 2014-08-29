@@ -20,7 +20,7 @@ logs = []
 
 
 def print_supported_extensions():
-    print '.h|.m|.mm|.java'
+    print 'code_conv'
 
 
 def find_node(symbol):

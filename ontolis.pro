@@ -25,7 +25,8 @@ SOURCES += main.cpp\
     widgets/OntologyGraph/OLSOntologyGraphRelationItem.cpp \
     widgets/OntologyGraph/OLSOntologyGraphRelationVisualizedLine.cpp \
     widgets/Shared/OLSOntologyDataController.cpp \
-    widgets/OntologyGraph/OLSOntologyGraphView.cpp
+    widgets/OntologyGraph/OLSOntologyGraphView.cpp \
+    ontoliscategorywidget.cpp
 
 HEADERS  += OntolisWindow.h \
     widgets/ProjectTree/OLSProject.h \
@@ -46,10 +47,12 @@ HEADERS  += OntolisWindow.h \
     widgets/Shared/OLSOntologyNodeData.h \
     widgets/Shared/OLSOntologyRelationData.h \
     widgets/Shared/OLSOntologyDataController.h \
-    widgets/OntologyGraph/OLSOntologyGraphView.h
+    widgets/OntologyGraph/OLSOntologyGraphView.h \
+    ontoliscategorywidget.h
 
 FORMS    += OntolisWindow.ui \
     widgets/OntologyGraph/OLSOntologyGraphAttributeEditor.ui \
-    widgets/OntologyGraph/OLSOntologyGraphWidget.ui
+    widgets/OntologyGraph/OLSOntologyGraphWidget.ui \
+    ontoliscategorywidget.ui
 
 RESOURCES +=

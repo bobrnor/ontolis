@@ -25,7 +25,7 @@ OLSOntologyGraphWidget::OLSOntologyGraphWidget(QWidget *parent) :
   m_ontologyView->setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);
 
   m_sourceCodeViewer = new QTextEdit(this);
-  m_sourceCodeViewer->setReadOnly(true);
+  m_sourceCodeViewer->setReadOnly(false);
   m_sourceCodeViewer->setVisible(false);
 
   QGraphicsScene *scene = new QGraphicsScene(m_ontologyView);

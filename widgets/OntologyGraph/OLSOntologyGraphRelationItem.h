@@ -15,9 +15,10 @@ class OLSOntologyGraphRelationItem : public QGraphicsLineItem, public OLSOntolog
     OLSOntologyGraphNodeItem *m_destinationNode;
 
     double m_width;
+    double m_lenght;
     QVector<qreal> m_dashPattern;
 
-  protected:
+  public:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 
     void mousePressEvent(QGraphicsSceneMouseEvent *event);

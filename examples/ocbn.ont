@@ -1,0 +1,1165 @@
+{
+    "last_id": 192,
+    "nodes": [
+        {
+            "id": 0,
+            "name": "<external-declaration>",
+            "position_x": 9208.748551493889,
+            "position_y": 10423.100129549015
+        },
+        {
+            "id": 1,
+            "name": "<function-definition>",
+            "position_x": 18159.732442784814,
+            "position_y": 12935.804977765187
+        },
+        {
+            "id": 3,
+            "name": "<declaration>",
+            "position_x": 11709.023091046503,
+            "position_y": 16631.45167657919
+        },
+        {
+            "id": 5,
+            "name": "<class-interface>",
+            "position_x": 18251.908044387594,
+            "position_y": 19195.599634031765
+        },
+        {
+            "id": 7,
+            "name": "<class-implementation>",
+            "position_x": 8171.167661397878,
+            "position_y": 17888.617603735427
+        },
+        {
+            "id": 9,
+            "name": "<category-interface>",
+            "position_x": 6042.838620083806,
+            "position_y": 18424.004397272143
+        },
+        {
+            "id": 11,
+            "name": "<category-implementation>",
+            "position_x": 11083.249138763205,
+            "position_y": 7348.027838845941
+        },
+        {
+            "id": 13,
+            "name": "<protocol-declaration>",
+            "position_x": 4940.617289702349,
+            "position_y": 17046.60921884984
+        },
+        {
+            "id": 15,
+            "name": "<class-declaration-list>",
+            "position_x": 10474.498158989838,
+            "position_y": 1628.070402234625
+        },
+        {
+            "id": 17,
+            "name": "<@interface>",
+            "position_x": 6957.010161094261,
+            "position_y": 15127.975741222548
+        },
+        {
+            "id": 19,
+            "name": "<class-name>",
+            "position_x": 8541.362610718521,
+            "position_y": 7157.156618539952
+        },
+        {
+            "id": 21,
+            "name": "<superclass-name>",
+            "position_x": 13104.913424284301,
+            "position_y": 16312.463660510552
+        },
+        {
+            "id": 23,
+            "name": "<protocol-reference-list>",
+            "position_x": 5339.807891770274,
+            "position_y": 12964.595574424417
+        },
+        {
+            "id": 25,
+            "name": "<instance-variables>",
+            "position_x": 16032.85984520845,
+            "position_y": 19691.139889302543
+        },
+        {
+            "id": 27,
+            "name": "<interface-declaration-list>",
+            "position_x": 7933.954850478224,
+            "position_y": 12699.915988180142
+        },
+        {
+            "id": 29,
+            "name": "<@end>",
+            "position_x": 16819.035087169294,
+            "position_y": 16148.836782542612
+        },
+        {
+            "id": 31,
+            "name": "<@implementation>",
+            "position_x": 5035.5973244577435,
+            "position_y": 19936.986461479017
+        },
+        {
+            "id": 36,
+            "name": "<implementation-definition-list>",
+            "position_x": 1209.491195100756,
+            "position_y": 12859.775742899186
+        },
+        {
+            "id": 41,
+            "name": "<category-name>",
+            "position_x": 16738.873741897445,
+            "position_y": 3789.337445068506
+        },
+        {
+            "id": 51,
+            "name": "<@protocol>",
+            "position_x": 12061.342920660669,
+            "position_y": 7810.366617093871
+        },
+        {
+            "id": 53,
+            "name": "<protocol-name>",
+            "position_x": 7391.809611359729,
+            "position_y": 17068.338941779162
+        },
+        {
+            "id": 58,
+            "name": "<@class>",
+            "position_x": 871.8238931457223,
+            "position_y": 15075.17653884195
+        },
+        {
+            "id": 60,
+            "name": "<class-list>",
+            "position_x": 12451.421565032015,
+            "position_y": 11766.674465923728
+        },
+        {
+            "id": 62,
+            "name": "Nonterminal of ;",
+            "position_x": 10681.234312923638,
+            "position_y": 16809.138020473678
+        },
+        {
+            "id": 64,
+            "name": ";",
+            "position_x": 15160.812777357238,
+            "position_y": 7720.662295432173
+        },
+        {
+            "id": 68,
+            "name": "Nonterminal of ,",
+            "position_x": 11257.218240813338,
+            "position_y": 1422.3492989693586
+        },
+        {
+            "id": 70,
+            "name": ",",
+            "position_x": 6413.981060905984,
+            "position_y": 19274.61628644042
+        },
+        {
+            "id": 73,
+            "name": "<  <protocol-list>",
+            "position_x": 14405.423617903465,
+            "position_y": 14266.806510716133
+        },
+        {
+            "id": 75,
+            "name": "<protocol-list>",
+            "position_x": 12734.881521510977,
+            "position_y": 18873.09111183055
+        },
+        {
+            "id": 81,
+            "name": "<identifier>",
+            "position_x": 5244.107450870519,
+            "position_y": 14420.31359473759
+        },
+        {
+            "id": 86,
+            "name": "Nonterminal of {",
+            "position_x": 17880.08623622433,
+            "position_y": 3617.259585607491
+        },
+        {
+            "id": 88,
+            "name": "{",
+            "position_x": 5081.726045683797,
+            "position_y": 4371.330398170135
+        },
+        {
+            "id": 90,
+            "name": "<visibility-specification>",
+            "position_x": 1761.0356200576716,
+            "position_y": 18698.42505638362
+        },
+        {
+            "id": 92,
+            "name": "<struct-declaration-list>",
+            "position_x": 15980.410845943421,
+            "position_y": 19448.929029476356
+        },
+        {
+            "id": 95,
+            "name": "Nonterminal of }",
+            "position_x": 23.004227647251962,
+            "position_y": 13493.282471189399
+        },
+        {
+            "id": 97,
+            "name": "}",
+            "position_x": 16368.274583368455,
+            "position_y": 10321.470315178138
+        },
+        {
+            "id": 99,
+            "name": "<@private>",
+            "position_x": 13100.266513729171,
+            "position_y": 15823.024016988285
+        },
+        {
+            "id": 101,
+            "name": "<@protected>",
+            "position_x": 6599.993931157229,
+            "position_y": 68.55525815713025
+        },
+        {
+            "id": 103,
+            "name": "<@public>",
+            "position_x": 6130.054758754293,
+            "position_y": 12106.498826452495
+        },
+        {
+            "id": 106,
+            "name": "<method-declaration>",
+            "position_x": 14436.98226806667,
+            "position_y": 12579.30394428125
+        },
+        {
+            "id": 112,
+            "name": "<class-method-declaration>",
+            "position_x": 4395.492336046019,
+            "position_y": 7888.197456937558
+        },
+        {
+            "id": 114,
+            "name": "<instance-method-declaration>",
+            "position_x": 12250.284825043069,
+            "position_y": 3722.2382211128233
+        },
+        {
+            "id": 116,
+            "name": "Nonterminal of +",
+            "position_x": 16083.795215693559,
+            "position_y": 9375.380707732698
+        },
+        {
+            "id": 118,
+            "name": "+",
+            "position_x": 12238.196811431824,
+            "position_y": 11701.46001415622
+        },
+        {
+            "id": 120,
+            "name": "<method-type>",
+            "position_x": 18013.42926135328,
+            "position_y": 19345.73918455951
+        },
+        {
+            "id": 122,
+            "name": "<method-selector>",
+            "position_x": 13317.091443964495,
+            "position_y": 1683.4789631592262
+        },
+        {
+            "id": 132,
+            "name": "<method-definition>",
+            "position_x": 17243.338714363526,
+            "position_y": 10773.902548597198
+        },
+        {
+            "id": 140,
+            "name": "<class-method-definition>",
+            "position_x": 17904.611688385325,
+            "position_y": 17608.81164317987
+        },
+        {
+            "id": 142,
+            "name": "<instance-method-definition>",
+            "position_x": 4681.5830068872465,
+            "position_y": 1695.9433663190837
+        },
+        {
+            "id": 148,
+            "name": "<declaration-list>",
+            "position_x": 10341.557569326947,
+            "position_y": 6817.934330408075
+        },
+        {
+            "id": 150,
+            "name": "<compound-statement>",
+            "position_x": 5729.585328475959,
+            "position_y": 8604.922730109916
+        },
+        {
+            "id": 156,
+            "name": "<unary-selector>",
+            "position_x": 12480.197696413343,
+            "position_y": 5407.954701338218
+        },
+        {
+            "id": 158,
+            "name": "<keyword-selector>",
+            "position_x": 1226.1294508615529,
+            "position_y": 316.91265606494045
+        },
+        {
+            "id": 162,
+            "name": "Nonterminal of .",
+            "position_x": 5927.7888982816785,
+            "position_y": 9913.385208846068
+        },
+        {
+            "id": 164,
+            "name": ".",
+            "position_x": 12256.241830634524,
+            "position_y": 17148.32034237547
+        },
+        {
+            "id": 170,
+            "name": "Nonterminal of ",
+            "position_x": 4454.751884431127,
+            "position_y": 18223.194456473702
+        },
+        {
+            "id": 172,
+            "name": "",
+            "position_x": 12411.307799655026,
+            "position_y": 1518.593679479614
+        },
+        {
+            "id": 177,
+            "name": "<parameter-type-list>",
+            "position_x": 1186.4885801271653,
+            "position_y": 11080.464244398081
+        },
+        {
+            "id": 179,
+            "name": "<selector>",
+            "position_x": 18133.876189664632,
+            "position_y": 15226.28592969243
+        },
+        {
+            "id": 181,
+            "name": "<keyword-declarator>",
+            "position_x": 9731.577220613328,
+            "position_y": 9971.176152289283
+        },
+        {
+            "id": 191,
+            "name": "<type-name>",
+            "position_x": 274.1859595315521,
+            "position_y": 17183.647275603427
+        }
+    ],
+    "relations": [
+        {
+            "destination_node_id": 0,
+            "id": 2,
+            "name": "a_part_of",
+            "source_node_id": 1
+        },
+        {
+            "destination_node_id": 0,
+            "id": 4,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 0,
+            "id": 6,
+            "name": "a_part_of",
+            "source_node_id": 5
+        },
+        {
+            "destination_node_id": 0,
+            "id": 8,
+            "name": "a_part_of",
+            "source_node_id": 7
+        },
+        {
+            "destination_node_id": 0,
+            "id": 10,
+            "name": "a_part_of",
+            "source_node_id": 9
+        },
+        {
+            "destination_node_id": 0,
+            "id": 12,
+            "name": "a_part_of",
+            "source_node_id": 11
+        },
+        {
+            "destination_node_id": 0,
+            "id": 14,
+            "name": "a_part_of",
+            "source_node_id": 13
+        },
+        {
+            "destination_node_id": 0,
+            "id": 16,
+            "name": "a_part_of",
+            "source_node_id": 15
+        },
+        {
+            "destination_node_id": 5,
+            "id": 18,
+            "name": "a_part_of",
+            "source_node_id": 17
+        },
+        {
+            "destination_node_id": 5,
+            "id": 20,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 5,
+            "id": 22,
+            "name": "optional",
+            "source_node_id": 21
+        },
+        {
+            "destination_node_id": 5,
+            "id": 24,
+            "name": "optional",
+            "source_node_id": 23
+        },
+        {
+            "destination_node_id": 5,
+            "id": 26,
+            "name": "optional",
+            "source_node_id": 25
+        },
+        {
+            "destination_node_id": 5,
+            "id": 28,
+            "name": "optional",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 5,
+            "id": 30,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 7,
+            "id": 32,
+            "name": "a_part_of",
+            "source_node_id": 31
+        },
+        {
+            "destination_node_id": 7,
+            "id": 33,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 7,
+            "id": 34,
+            "name": "optional",
+            "source_node_id": 21
+        },
+        {
+            "destination_node_id": 7,
+            "id": 35,
+            "name": "optional",
+            "source_node_id": 25
+        },
+        {
+            "destination_node_id": 7,
+            "id": 37,
+            "name": "optional",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 7,
+            "id": 38,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 9,
+            "id": 39,
+            "name": "a_part_of",
+            "source_node_id": 17
+        },
+        {
+            "destination_node_id": 9,
+            "id": 40,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 9,
+            "id": 42,
+            "name": "a_part_of",
+            "source_node_id": 41
+        },
+        {
+            "destination_node_id": 9,
+            "id": 43,
+            "name": "optional",
+            "source_node_id": 23
+        },
+        {
+            "destination_node_id": 9,
+            "id": 44,
+            "name": "optional",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 9,
+            "id": 45,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 11,
+            "id": 46,
+            "name": "a_part_of",
+            "source_node_id": 31
+        },
+        {
+            "destination_node_id": 11,
+            "id": 47,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 11,
+            "id": 48,
+            "name": "a_part_of",
+            "source_node_id": 41
+        },
+        {
+            "destination_node_id": 11,
+            "id": 49,
+            "name": "optional",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 11,
+            "id": 50,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 13,
+            "id": 52,
+            "name": "a_part_of",
+            "source_node_id": 51
+        },
+        {
+            "destination_node_id": 13,
+            "id": 54,
+            "name": "a_part_of",
+            "source_node_id": 53
+        },
+        {
+            "destination_node_id": 13,
+            "id": 55,
+            "name": "optional",
+            "source_node_id": 23
+        },
+        {
+            "destination_node_id": 13,
+            "id": 56,
+            "name": "optional",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 13,
+            "id": 57,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 15,
+            "id": 59,
+            "name": "a_part_of",
+            "source_node_id": 58
+        },
+        {
+            "destination_node_id": 15,
+            "id": 61,
+            "name": "a_part_of",
+            "source_node_id": 60
+        },
+        {
+            "destination_node_id": 15,
+            "id": 63,
+            "name": "a_part_of",
+            "source_node_id": 62
+        },
+        {
+            "destination_node_id": 62,
+            "id": 65,
+            "name": "is_instance",
+            "source_node_id": 64
+        },
+        {
+            "destination_node_id": 60,
+            "id": 66,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 60,
+            "id": 67,
+            "name": "a_part_of",
+            "source_node_id": 60
+        },
+        {
+            "destination_node_id": 60,
+            "id": 69,
+            "name": "a_part_of",
+            "source_node_id": 68
+        },
+        {
+            "destination_node_id": 68,
+            "id": 71,
+            "name": "is_instance",
+            "source_node_id": 70
+        },
+        {
+            "destination_node_id": 60,
+            "id": 72,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 23,
+            "id": 74,
+            "name": "a_part_of",
+            "source_node_id": 73
+        },
+        {
+            "destination_node_id": 75,
+            "id": 76,
+            "name": "a_part_of",
+            "source_node_id": 53
+        },
+        {
+            "destination_node_id": 75,
+            "id": 77,
+            "name": "a_part_of",
+            "source_node_id": 75
+        },
+        {
+            "destination_node_id": 75,
+            "id": 78,
+            "name": "a_part_of",
+            "source_node_id": 68
+        },
+        {
+            "destination_node_id": 68,
+            "id": 79,
+            "name": "is_instance",
+            "source_node_id": 70
+        },
+        {
+            "destination_node_id": 75,
+            "id": 80,
+            "name": "a_part_of",
+            "source_node_id": 53
+        },
+        {
+            "destination_node_id": 19,
+            "id": 82,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 21,
+            "id": 83,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 41,
+            "id": 84,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 53,
+            "id": 85,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 25,
+            "id": 87,
+            "name": "a_part_of",
+            "source_node_id": 86
+        },
+        {
+            "destination_node_id": 86,
+            "id": 89,
+            "name": "is_instance",
+            "source_node_id": 88
+        },
+        {
+            "destination_node_id": 25,
+            "id": 91,
+            "name": "optional",
+            "source_node_id": 90
+        },
+        {
+            "destination_node_id": 25,
+            "id": 93,
+            "name": "a_part_of",
+            "source_node_id": 92
+        },
+        {
+            "destination_node_id": 25,
+            "id": 94,
+            "name": "optional",
+            "source_node_id": 25
+        },
+        {
+            "destination_node_id": 25,
+            "id": 96,
+            "name": "a_part_of",
+            "source_node_id": 95
+        },
+        {
+            "destination_node_id": 95,
+            "id": 98,
+            "name": "is_instance",
+            "source_node_id": 97
+        },
+        {
+            "destination_node_id": 90,
+            "id": 100,
+            "name": "a_part_of",
+            "source_node_id": 99
+        },
+        {
+            "destination_node_id": 90,
+            "id": 102,
+            "name": "a_part_of",
+            "source_node_id": 101
+        },
+        {
+            "destination_node_id": 90,
+            "id": 104,
+            "name": "a_part_of",
+            "source_node_id": 103
+        },
+        {
+            "destination_node_id": 27,
+            "id": 105,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 27,
+            "id": 107,
+            "name": "a_part_of",
+            "source_node_id": 106
+        },
+        {
+            "destination_node_id": 27,
+            "id": 108,
+            "name": "a_part_of",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 27,
+            "id": 109,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 27,
+            "id": 110,
+            "name": "a_part_of",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 27,
+            "id": 111,
+            "name": "a_part_of",
+            "source_node_id": 106
+        },
+        {
+            "destination_node_id": 106,
+            "id": 113,
+            "name": "a_part_of",
+            "source_node_id": 112
+        },
+        {
+            "destination_node_id": 106,
+            "id": 115,
+            "name": "a_part_of",
+            "source_node_id": 114
+        },
+        {
+            "destination_node_id": 112,
+            "id": 117,
+            "name": "a_part_of",
+            "source_node_id": 116
+        },
+        {
+            "destination_node_id": 116,
+            "id": 119,
+            "name": "is_instance",
+            "source_node_id": 118
+        },
+        {
+            "destination_node_id": 112,
+            "id": 121,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 112,
+            "id": 123,
+            "name": "a_part_of",
+            "source_node_id": 122
+        },
+        {
+            "destination_node_id": 112,
+            "id": 124,
+            "name": "a_part_of",
+            "source_node_id": 62
+        },
+        {
+            "destination_node_id": 62,
+            "id": 125,
+            "name": "is_instance",
+            "source_node_id": 64
+        },
+        {
+            "destination_node_id": 114,
+            "id": 126,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 114,
+            "id": 127,
+            "name": "a_part_of",
+            "source_node_id": 122
+        },
+        {
+            "destination_node_id": 114,
+            "id": 128,
+            "name": "a_part_of",
+            "source_node_id": 62
+        },
+        {
+            "destination_node_id": 62,
+            "id": 129,
+            "name": "is_instance",
+            "source_node_id": 64
+        },
+        {
+            "destination_node_id": 36,
+            "id": 130,
+            "name": "a_part_of",
+            "source_node_id": 1
+        },
+        {
+            "destination_node_id": 36,
+            "id": 131,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 36,
+            "id": 133,
+            "name": "a_part_of",
+            "source_node_id": 132
+        },
+        {
+            "destination_node_id": 36,
+            "id": 134,
+            "name": "a_part_of",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 36,
+            "id": 135,
+            "name": "a_part_of",
+            "source_node_id": 1
+        },
+        {
+            "destination_node_id": 36,
+            "id": 136,
+            "name": "a_part_of",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 36,
+            "id": 137,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 36,
+            "id": 138,
+            "name": "a_part_of",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 36,
+            "id": 139,
+            "name": "a_part_of",
+            "source_node_id": 132
+        },
+        {
+            "destination_node_id": 132,
+            "id": 141,
+            "name": "a_part_of",
+            "source_node_id": 140
+        },
+        {
+            "destination_node_id": 132,
+            "id": 143,
+            "name": "a_part_of",
+            "source_node_id": 142
+        },
+        {
+            "destination_node_id": 140,
+            "id": 144,
+            "name": "a_part_of",
+            "source_node_id": 116
+        },
+        {
+            "destination_node_id": 116,
+            "id": 145,
+            "name": "is_instance",
+            "source_node_id": 118
+        },
+        {
+            "destination_node_id": 140,
+            "id": 146,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 140,
+            "id": 147,
+            "name": "a_part_of",
+            "source_node_id": 122
+        },
+        {
+            "destination_node_id": 140,
+            "id": 149,
+            "name": "optional",
+            "source_node_id": 148
+        },
+        {
+            "destination_node_id": 140,
+            "id": 151,
+            "name": "a_part_of",
+            "source_node_id": 150
+        },
+        {
+            "destination_node_id": 142,
+            "id": 152,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 142,
+            "id": 153,
+            "name": "a_part_of",
+            "source_node_id": 122
+        },
+        {
+            "destination_node_id": 142,
+            "id": 154,
+            "name": "optional",
+            "source_node_id": 148
+        },
+        {
+            "destination_node_id": 142,
+            "id": 155,
+            "name": "a_part_of",
+            "source_node_id": 150
+        },
+        {
+            "destination_node_id": 122,
+            "id": 157,
+            "name": "a_part_of",
+            "source_node_id": 156
+        },
+        {
+            "destination_node_id": 122,
+            "id": 159,
+            "name": "a_part_of",
+            "source_node_id": 158
+        },
+        {
+            "destination_node_id": 122,
+            "id": 160,
+            "name": "a_part_of",
+            "source_node_id": 68
+        },
+        {
+            "destination_node_id": 68,
+            "id": 161,
+            "name": "is_instance",
+            "source_node_id": 70
+        },
+        {
+            "destination_node_id": 122,
+            "id": 163,
+            "name": "a_part_of",
+            "source_node_id": 162
+        },
+        {
+            "destination_node_id": 162,
+            "id": 165,
+            "name": "is_instance",
+            "source_node_id": 164
+        },
+        {
+            "destination_node_id": 122,
+            "id": 166,
+            "name": "a_part_of",
+            "source_node_id": 162
+        },
+        {
+            "destination_node_id": 162,
+            "id": 167,
+            "name": "is_instance",
+            "source_node_id": 164
+        },
+        {
+            "destination_node_id": 122,
+            "id": 168,
+            "name": "a_part_of",
+            "source_node_id": 162
+        },
+        {
+            "destination_node_id": 162,
+            "id": 169,
+            "name": "is_instance",
+            "source_node_id": 164
+        },
+        {
+            "destination_node_id": 122,
+            "id": 171,
+            "name": "a_part_of",
+            "source_node_id": 170
+        },
+        {
+            "destination_node_id": 170,
+            "id": 173,
+            "name": "is_instance",
+            "source_node_id": 172
+        },
+        {
+            "destination_node_id": 122,
+            "id": 174,
+            "name": "a_part_of",
+            "source_node_id": 158
+        },
+        {
+            "destination_node_id": 122,
+            "id": 175,
+            "name": "a_part_of",
+            "source_node_id": 68
+        },
+        {
+            "destination_node_id": 68,
+            "id": 176,
+            "name": "is_instance",
+            "source_node_id": 70
+        },
+        {
+            "destination_node_id": 122,
+            "id": 178,
+            "name": "optional",
+            "source_node_id": 177
+        },
+        {
+            "destination_node_id": 156,
+            "id": 180,
+            "name": "a_part_of",
+            "source_node_id": 179
+        },
+        {
+            "destination_node_id": 158,
+            "id": 182,
+            "name": "a_part_of",
+            "source_node_id": 181
+        },
+        {
+            "destination_node_id": 158,
+            "id": 183,
+            "name": "a_part_of",
+            "source_node_id": 158
+        },
+        {
+            "destination_node_id": 158,
+            "id": 184,
+            "name": "a_part_of",
+            "source_node_id": 181
+        },
+        {
+            "destination_node_id": 181,
+            "id": 185,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 181,
+            "id": 186,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 181,
+            "id": 187,
+            "name": "a_part_of",
+            "source_node_id": 179
+        },
+        {
+            "destination_node_id": 181,
+            "id": 188,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 181,
+            "id": 189,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 179,
+            "id": 190,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 120,
+            "id": 192,
+            "name": "a_part_of",
+            "source_node_id": 191
+        }
+    ]
+}

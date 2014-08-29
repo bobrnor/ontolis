@@ -1,0 +1,2335 @@
+{
+    "last_id": 20195,
+    "nodes": [
+        {
+            "id": 0,
+            "name": "<external-declaration>",
+            "position_x": 9208.748551493889,
+            "position_y": 10423.100129549015
+        },
+        {
+            "id": 1,
+            "name": "<function-definition>",
+            "position_x": 18159.732442784814,
+            "position_y": 12935.804977765187
+        },
+        {
+            "id": 3,
+            "name": "<declaration>",
+            "position_x": 11709.023091046503,
+            "position_y": 16631.45167657919
+        },
+        {
+            "id": 5,
+            "name": "<class-interface>",
+            "position_x": 18251.908044387594,
+            "position_y": 19195.599634031765
+        },
+        {
+            "id": 7,
+            "name": "<class-implementation>",
+            "position_x": 8171.167661397878,
+            "position_y": 17888.617603735427
+        },
+        {
+            "id": 9,
+            "name": "<category-interface>",
+            "position_x": 6042.838620083806,
+            "position_y": 18424.004397272143
+        },
+        {
+            "id": 11,
+            "name": "<category-implementation>",
+            "position_x": 11083.249138763205,
+            "position_y": 7348.027838845941
+        },
+        {
+            "id": 13,
+            "name": "<protocol-declaration>",
+            "position_x": 4940.617289702349,
+            "position_y": 17046.60921884984
+        },
+        {
+            "id": 15,
+            "name": "<class-declaration-list>",
+            "position_x": 10474.498158989838,
+            "position_y": 1628.070402234625
+        },
+        {
+            "id": 17,
+            "name": "<@interface>",
+            "position_x": 6957.010161094261,
+            "position_y": 15127.975741222548
+        },
+        {
+            "id": 19,
+            "name": "<class-name>",
+            "position_x": 8541.362610718521,
+            "position_y": 7157.156618539952
+        },
+        {
+            "id": 21,
+            "name": "<superclass-name>",
+            "position_x": 13104.913424284301,
+            "position_y": 16312.463660510552
+        },
+        {
+            "id": 23,
+            "name": "<protocol-reference-list>",
+            "position_x": 5339.807891770274,
+            "position_y": 12964.595574424417
+        },
+        {
+            "id": 25,
+            "name": "<instance-variables>",
+            "position_x": 16032.85984520845,
+            "position_y": 19691.139889302543
+        },
+        {
+            "id": 27,
+            "name": "<interface-declaration-list>",
+            "position_x": 7933.954850478224,
+            "position_y": 12699.915988180142
+        },
+        {
+            "id": 29,
+            "name": "<@end>",
+            "position_x": 16819.035087169294,
+            "position_y": 16148.836782542612
+        },
+        {
+            "id": 31,
+            "name": "<@implementation>",
+            "position_x": 5035.5973244577435,
+            "position_y": 19936.986461479017
+        },
+        {
+            "id": 36,
+            "name": "<implementation-definition-list>",
+            "position_x": 1209.491195100756,
+            "position_y": 12859.775742899186
+        },
+        {
+            "id": 41,
+            "name": "<category-name>",
+            "position_x": 16738.873741897445,
+            "position_y": 3789.337445068506
+        },
+        {
+            "id": 51,
+            "name": "<@protocol>",
+            "position_x": 12061.342920660669,
+            "position_y": 7810.366617093871
+        },
+        {
+            "id": 53,
+            "name": "<protocol-name>",
+            "position_x": 7391.809611359729,
+            "position_y": 17068.338941779162
+        },
+        {
+            "id": 58,
+            "name": "<@class>",
+            "position_x": 871.8238931457223,
+            "position_y": 15075.17653884195
+        },
+        {
+            "id": 60,
+            "name": "<class-list>",
+            "position_x": 12451.421565032015,
+            "position_y": 11766.674465923728
+        },
+        {
+            "id": 62,
+            "name": "Nonterminal of ;",
+            "position_x": 10681.234312923638,
+            "position_y": 16809.138020473678
+        },
+        {
+            "id": 64,
+            "name": ";",
+            "position_x": 15160.812777357238,
+            "position_y": 7720.662295432173
+        },
+        {
+            "id": 68,
+            "name": "Nonterminal of ,",
+            "position_x": 11257.218240813338,
+            "position_y": 1422.3492989693586
+        },
+        {
+            "id": 70,
+            "name": ",",
+            "position_x": 6413.981060905984,
+            "position_y": 19274.61628644042
+        },
+        {
+            "id": 73,
+            "name": "<  <protocol-list>",
+            "position_x": 14405.423617903465,
+            "position_y": 14266.806510716133
+        },
+        {
+            "id": 75,
+            "name": "<protocol-list>",
+            "position_x": 12734.881521510977,
+            "position_y": 18873.09111183055
+        },
+        {
+            "id": 81,
+            "name": "<identifier>",
+            "position_x": 5244.107450870519,
+            "position_y": 14420.31359473759
+        },
+        {
+            "id": 86,
+            "name": "Nonterminal of {",
+            "position_x": 17880.08623622433,
+            "position_y": 3617.259585607491
+        },
+        {
+            "id": 88,
+            "name": "{",
+            "position_x": 5081.726045683797,
+            "position_y": 4371.330398170135
+        },
+        {
+            "id": 90,
+            "name": "<visibility-specification>",
+            "position_x": 1761.0356200576716,
+            "position_y": 18698.42505638362
+        },
+        {
+            "id": 92,
+            "name": "<struct-declaration-list>",
+            "position_x": 15980.410845943421,
+            "position_y": 19448.929029476356
+        },
+        {
+            "id": 95,
+            "name": "Nonterminal of }",
+            "position_x": 23.004227647251962,
+            "position_y": 13493.282471189399
+        },
+        {
+            "id": 97,
+            "name": "}",
+            "position_x": 16368.274583368455,
+            "position_y": 10321.470315178138
+        },
+        {
+            "id": 99,
+            "name": "<@private>",
+            "position_x": 13100.266513729171,
+            "position_y": 15823.024016988285
+        },
+        {
+            "id": 101,
+            "name": "<@protected>",
+            "position_x": 6599.993931157229,
+            "position_y": 68.55525815713025
+        },
+        {
+            "id": 103,
+            "name": "<@public>",
+            "position_x": 6130.054758754293,
+            "position_y": 12106.498826452495
+        },
+        {
+            "id": 106,
+            "name": "<method-declaration>",
+            "position_x": 14436.98226806667,
+            "position_y": 12579.30394428125
+        },
+        {
+            "id": 112,
+            "name": "<class-method-declaration>",
+            "position_x": 4395.492336046019,
+            "position_y": 7888.197456937558
+        },
+        {
+            "id": 114,
+            "name": "<instance-method-declaration>",
+            "position_x": 12250.284825043069,
+            "position_y": 3722.2382211128233
+        },
+        {
+            "id": 116,
+            "name": "Nonterminal of +",
+            "position_x": 16083.795215693559,
+            "position_y": 9375.380707732698
+        },
+        {
+            "id": 118,
+            "name": "+",
+            "position_x": 12238.196811431824,
+            "position_y": 11701.46001415622
+        },
+        {
+            "id": 120,
+            "name": "<method-type>",
+            "position_x": 18013.42926135328,
+            "position_y": 19345.73918455951
+        },
+        {
+            "id": 122,
+            "name": "<method-selector>",
+            "position_x": 13317.091443964495,
+            "position_y": 1683.4789631592262
+        },
+        {
+            "id": 132,
+            "name": "<method-definition>",
+            "position_x": 17243.338714363526,
+            "position_y": 10773.902548597198
+        },
+        {
+            "id": 140,
+            "name": "<class-method-definition>",
+            "position_x": 17904.611688385325,
+            "position_y": 17608.81164317987
+        },
+        {
+            "id": 142,
+            "name": "<instance-method-definition>",
+            "position_x": 4681.5830068872465,
+            "position_y": 1695.9433663190837
+        },
+        {
+            "id": 148,
+            "name": "<declaration-list>",
+            "position_x": 10341.557569326947,
+            "position_y": 6817.934330408075
+        },
+        {
+            "id": 150,
+            "name": "<compound-statement>",
+            "position_x": 5729.585328475959,
+            "position_y": 8604.922730109916
+        },
+        {
+            "id": 156,
+            "name": "<unary-selector>",
+            "position_x": 12480.197696413343,
+            "position_y": 5407.954701338218
+        },
+        {
+            "id": 158,
+            "name": "<keyword-selector>",
+            "position_x": 1226.1294508615529,
+            "position_y": 316.91265606494045
+        },
+        {
+            "id": 162,
+            "name": "Nonterminal of .",
+            "position_x": 5927.7888982816785,
+            "position_y": 9913.385208846068
+        },
+        {
+            "id": 164,
+            "name": ".",
+            "position_x": 12256.241830634524,
+            "position_y": 17148.32034237547
+        },
+        {
+            "id": 170,
+            "name": "Nonterminal of ",
+            "position_x": 4454.751884431127,
+            "position_y": 18223.194456473702
+        },
+        {
+            "id": 172,
+            "name": "",
+            "position_x": 12411.307799655026,
+            "position_y": 1518.593679479614
+        },
+        {
+            "id": 177,
+            "name": "<parameter-type-list>",
+            "position_x": 1186.4885801271653,
+            "position_y": 11080.464244398081
+        },
+        {
+            "id": 179,
+            "name": "<selector>",
+            "position_x": 18133.876189664632,
+            "position_y": 15226.28592969243
+        },
+        {
+            "id": 181,
+            "name": "<keyword-declarator>",
+            "position_x": 9731.577220613328,
+            "position_y": 9971.176152289283
+        },
+        {
+            "id": 191,
+            "name": "<type-name>",
+            "position_x": 274.1859595315521,
+            "position_y": 17183.647275603427
+        },
+        {
+            "id": 200,
+            "name": "<class declaration>",
+            "position_x": 10030.444030216406,
+            "position_y": 16560.62633692076
+        },
+        {
+            "id": 201,
+            "name": "<class modifiers>",
+            "position_x": 1443.8988077982717,
+            "position_y": 10072.915499494999
+        },
+        {
+            "id": 203,
+            "name": "Nonterminal of class",
+            "position_x": 9366.819514221294,
+            "position_y": 6473.342590199835
+        },
+        {
+            "id": 205,
+            "name": "class",
+            "position_x": 19569.027603035058,
+            "position_y": 59.14788899828105
+        },
+        {
+            "id": 207,
+            "name": "<identifier>",
+            "position_x": 4698.786934707579,
+            "position_y": 18195.824071787076
+        },
+        {
+            "id": 209,
+            "name": "<super>",
+            "position_x": 16863.287746750666,
+            "position_y": 15095.73510443977
+        },
+        {
+            "id": 2011,
+            "name": "<interfaces>",
+            "position_x": 13524.56815431573,
+            "position_y": 1075.4169171392869
+        },
+        {
+            "id": 2013,
+            "name": "<class body>",
+            "position_x": 16635.035637816487,
+            "position_y": 8423.68696139385
+        },
+        {
+            "id": 2015,
+            "name": "<class modifiers> [0]",
+            "position_x": 4503.790784962074,
+            "position_y": 6419.320611816148
+        },
+        {
+            "id": 2017,
+            "name": "<class modifier>",
+            "position_x": 15220.16783972252,
+            "position_y": 15665.426672360509
+        },
+        {
+            "id": 2019,
+            "name": "<class modifiers> [1]",
+            "position_x": 1112.7777474781708,
+            "position_y": 4029.7626214114234
+        },
+        {
+            "id": 2023,
+            "name": "<class modifier> [0]",
+            "position_x": 2937.07527638273,
+            "position_y": 1044.6865544214056
+        },
+        {
+            "id": 2025,
+            "name": "Nonterminal of public",
+            "position_x": 3623.514309621423,
+            "position_y": 6309.981197832364
+        },
+        {
+            "id": 2027,
+            "name": "public",
+            "position_x": 14927.464894749603,
+            "position_y": 5870.241008583399
+        },
+        {
+            "id": 2029,
+            "name": "<class modifier> [1]",
+            "position_x": 16219.987124553421,
+            "position_y": 6817.036081817188
+        },
+        {
+            "id": 2031,
+            "name": "Nonterminal of abstract",
+            "position_x": 9236.369842051226,
+            "position_y": 18142.91409315713
+        },
+        {
+            "id": 2033,
+            "name": "abstract",
+            "position_x": 15960.891083571052,
+            "position_y": 6344.1815632155985
+        },
+        {
+            "id": 2035,
+            "name": "<class modifier> [2]",
+            "position_x": 4509.031618408503,
+            "position_y": 19558.334187049924
+        },
+        {
+            "id": 2037,
+            "name": "Nonterminal of final",
+            "position_x": 12548.50440443333,
+            "position_y": 11128.904381710301
+        },
+        {
+            "id": 2039,
+            "name": "final",
+            "position_x": 6511.058468776289,
+            "position_y": 15140.88873927958
+        },
+        {
+            "id": 2041,
+            "name": "Nonterminal of extends",
+            "position_x": 5980.919093731513,
+            "position_y": 11601.216049795434
+        },
+        {
+            "id": 2043,
+            "name": "extends",
+            "position_x": 17097.455485079263,
+            "position_y": 18492.157086717747
+        },
+        {
+            "id": 2045,
+            "name": "<class type>",
+            "position_x": 15375.327571902397,
+            "position_y": 11987.64717614068
+        },
+        {
+            "id": 2047,
+            "name": "Nonterminal of implements",
+            "position_x": 10441.36482167046,
+            "position_y": 2416.059879823749
+        },
+        {
+            "id": 2049,
+            "name": "implements",
+            "position_x": 19907.22035405252,
+            "position_y": 19945.770353562068
+        },
+        {
+            "id": 2051,
+            "name": "<interface type list>",
+            "position_x": 19398.94868062478,
+            "position_y": 19071.48897737229
+        },
+        {
+            "id": 2053,
+            "name": "<interface type list> [0]",
+            "position_x": 5590.1401510819305,
+            "position_y": 18762.84039700169
+        },
+        {
+            "id": 2055,
+            "name": "<interface type>",
+            "position_x": 14572.123568108895,
+            "position_y": 1464.0755433370246
+        },
+        {
+            "id": 2057,
+            "name": "<interface type list> [1]",
+            "position_x": 15702.15762216641,
+            "position_y": 3834.242912845085
+        },
+        {
+            "id": 2060,
+            "name": "Nonterminal of ,",
+            "position_x": 17913.269481401945,
+            "position_y": 18221.959058146913
+        },
+        {
+            "id": 2062,
+            "name": ",",
+            "position_x": 17661.323498522757,
+            "position_y": 6282.919570153777
+        },
+        {
+            "id": 2065,
+            "name": "Nonterminal of {",
+            "position_x": 4338.017706457445,
+            "position_y": 13127.168483439156
+        },
+        {
+            "id": 2067,
+            "name": "{",
+            "position_x": 2022.5905024023505,
+            "position_y": 13627.396468381572
+        },
+        {
+            "id": 2069,
+            "name": "<class body declarations>",
+            "position_x": 1337.565725253218,
+            "position_y": 16820.762313653835
+        },
+        {
+            "id": 2071,
+            "name": "Nonterminal of }",
+            "position_x": 7002.089451968985,
+            "position_y": 862.9445805908053
+        },
+        {
+            "id": 2073,
+            "name": "}",
+            "position_x": 3282.213517204242,
+            "position_y": 2773.1846477727704
+        },
+        {
+            "id": 2075,
+            "name": "<class body declarations> [0]",
+            "position_x": 16079.989315393688,
+            "position_y": 5816.461801279916
+        },
+        {
+            "id": 2077,
+            "name": "<class body declaration>",
+            "position_x": 12248.290150109242,
+            "position_y": 12865.043474413613
+        },
+        {
+            "id": 2079,
+            "name": "<class body declarations> [1]",
+            "position_x": 14632.647927197242,
+            "position_y": 4718.782292082462
+        },
+        {
+            "id": 2083,
+            "name": "<class member declaration>",
+            "position_x": 1860.2795678274208,
+            "position_y": 11581.43622836733
+        },
+        {
+            "id": 2085,
+            "name": "<method declaration>",
+            "position_x": 19442.16147308594,
+            "position_y": 1567.201689790063
+        },
+        {
+            "id": 2087,
+            "name": "<formal parameter list>",
+            "position_x": 5522.211775717389,
+            "position_y": 10086.25600366542
+        },
+        {
+            "id": 2088,
+            "name": "<formal parameter list> [0]",
+            "position_x": 12177.709582387775,
+            "position_y": 908.6250923783012
+        },
+        {
+            "id": 2090,
+            "name": "<formal parameter>",
+            "position_x": 14994.227615610691,
+            "position_y": 2999.3796269970253
+        },
+        {
+            "id": 2092,
+            "name": "<formal parameter list> [1]",
+            "position_x": 10641.122989761448,
+            "position_y": 5770.147044482054
+        },
+        {
+            "id": 2098,
+            "name": "<type>",
+            "position_x": 3404.35463098778,
+            "position_y": 12693.835468649857
+        },
+        {
+            "id": 20100,
+            "name": "<variable declarator id>",
+            "position_x": 19626.80424456638,
+            "position_y": 1962.3553561534334
+        },
+        {
+            "id": 20102,
+            "name": "<class type list>",
+            "position_x": 16770.585324065305,
+            "position_y": 4464.5300462313635
+        },
+        {
+            "id": 20103,
+            "name": "<class type list> [0]",
+            "position_x": 3278.6120473600877,
+            "position_y": 1952.6277456638263
+        },
+        {
+            "id": 20106,
+            "name": "<class type list> [1]",
+            "position_x": 2369.383947753323,
+            "position_y": 8512.68517041546
+        },
+        {
+            "id": 20112,
+            "name": "<method header>",
+            "position_x": 10222.971305148523,
+            "position_y": 6579.393035078518
+        },
+        {
+            "id": 20114,
+            "name": "<method body>",
+            "position_x": 16075.759865885919,
+            "position_y": 4804.322255357971
+        },
+        {
+            "id": 20116,
+            "name": "<method modifiers>",
+            "position_x": 12139.682913558498,
+            "position_y": 12330.338255819777
+        },
+        {
+            "id": 20118,
+            "name": "<result type>",
+            "position_x": 11681.41778969185,
+            "position_y": 7995.93768253771
+        },
+        {
+            "id": 20120,
+            "name": "<method declarator>",
+            "position_x": 18926.287135421564,
+            "position_y": 12651.758900937668
+        },
+        {
+            "id": 20122,
+            "name": "<throws>",
+            "position_x": 18180.98218563575,
+            "position_y": 4724.217534029165
+        },
+        {
+            "id": 20124,
+            "name": "<result type> [0]",
+            "position_x": 14561.375689660612,
+            "position_y": 9857.319226931048
+        },
+        {
+            "id": 20127,
+            "name": "<result type> [1]",
+            "position_x": 2678.6278968683155,
+            "position_y": 3412.6289487104787
+        },
+        {
+            "id": 20129,
+            "name": "Nonterminal of void",
+            "position_x": 19761.414461925044,
+            "position_y": 16879.23403106854
+        },
+        {
+            "id": 20131,
+            "name": "void",
+            "position_x": 10986.154523808023,
+            "position_y": 9360.744577697633
+        },
+        {
+            "id": 20133,
+            "name": "<method modifiers> [0]",
+            "position_x": 19056.06092426634,
+            "position_y": 2023.2647836366468
+        },
+        {
+            "id": 20135,
+            "name": "<method modifier>",
+            "position_x": 538.9486652403375,
+            "position_y": 7775.616110089339
+        },
+        {
+            "id": 20137,
+            "name": "<method modifiers> [1]",
+            "position_x": 5289.861486851135,
+            "position_y": 13768.570853769026
+        },
+        {
+            "id": 20141,
+            "name": "<method modifier> [0]",
+            "position_x": 14893.7000664955,
+            "position_y": 15446.945154706445
+        },
+        {
+            "id": 20145,
+            "name": "<method modifier> [1]",
+            "position_x": 8610.06208749741,
+            "position_y": 18630.384362185203
+        },
+        {
+            "id": 20147,
+            "name": "Nonterminal of protected",
+            "position_x": 8782.726035051899,
+            "position_y": 13467.577075071858
+        },
+        {
+            "id": 20149,
+            "name": "protected",
+            "position_x": 18313.97177143527,
+            "position_y": 9262.959182696717
+        },
+        {
+            "id": 20151,
+            "name": "<method modifier> [2]",
+            "position_x": 19490.10116553917,
+            "position_y": 16337.3029890351
+        },
+        {
+            "id": 20153,
+            "name": "Nonterminal of private",
+            "position_x": 19440.5553564852,
+            "position_y": 6473.807519091879
+        },
+        {
+            "id": 20155,
+            "name": "private",
+            "position_x": 8012.127103367769,
+            "position_y": 7411.9472579947505
+        },
+        {
+            "id": 20157,
+            "name": "<method modifier> [3]",
+            "position_x": 11161.224379297792,
+            "position_y": 142.4896035367773
+        },
+        {
+            "id": 20159,
+            "name": "Nonterminal of static",
+            "position_x": 3014.9418026720978,
+            "position_y": 15221.191570012325
+        },
+        {
+            "id": 20161,
+            "name": "static",
+            "position_x": 6006.188030659676,
+            "position_y": 8238.293169395076
+        },
+        {
+            "id": 20163,
+            "name": "<method modifier> [4]",
+            "position_x": 4676.379816049196,
+            "position_y": 16985.40201180322
+        },
+        {
+            "id": 20167,
+            "name": "<method modifier> [5]",
+            "position_x": 3553.4560837563854,
+            "position_y": 4356.601519156433
+        },
+        {
+            "id": 20171,
+            "name": "<method modifier> [6]",
+            "position_x": 3697.9578833396245,
+            "position_y": 10160.969892710073
+        },
+        {
+            "id": 20173,
+            "name": "Nonterminal of synchronized",
+            "position_x": 9062.626437486231,
+            "position_y": 3977.0211282932432
+        },
+        {
+            "id": 20175,
+            "name": "synchronized",
+            "position_x": 12006.845227064727,
+            "position_y": 14139.809682590227
+        },
+        {
+            "id": 20177,
+            "name": "<method modifier> [7]",
+            "position_x": 16194.92460312676,
+            "position_y": 4455.1190507077235
+        },
+        {
+            "id": 20179,
+            "name": "Nonterminal of native",
+            "position_x": 2593.8669900655186,
+            "position_y": 14077.717986770553
+        },
+        {
+            "id": 20181,
+            "name": "native",
+            "position_x": 4369.5171220526,
+            "position_y": 12235.41529058495
+        }
+    ],
+    "relations": [
+        {
+            "destination_node_id": 0,
+            "id": 2,
+            "name": "a_part_of",
+            "source_node_id": 1
+        },
+        {
+            "destination_node_id": 0,
+            "id": 4,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 0,
+            "id": 6,
+            "name": "a_part_of",
+            "source_node_id": 5
+        },
+        {
+            "destination_node_id": 0,
+            "id": 8,
+            "name": "a_part_of",
+            "source_node_id": 7
+        },
+        {
+            "destination_node_id": 0,
+            "id": 10,
+            "name": "a_part_of",
+            "source_node_id": 9
+        },
+        {
+            "destination_node_id": 0,
+            "id": 12,
+            "name": "a_part_of",
+            "source_node_id": 11
+        },
+        {
+            "destination_node_id": 0,
+            "id": 14,
+            "name": "a_part_of",
+            "source_node_id": 13
+        },
+        {
+            "destination_node_id": 0,
+            "id": 16,
+            "name": "a_part_of",
+            "source_node_id": 15
+        },
+        {
+            "destination_node_id": 5,
+            "id": 18,
+            "name": "a_part_of",
+            "source_node_id": 17
+        },
+        {
+            "destination_node_id": 5,
+            "id": 20,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 5,
+            "id": 22,
+            "name": "optional",
+            "source_node_id": 21
+        },
+        {
+            "destination_node_id": 5,
+            "id": 24,
+            "name": "optional",
+            "source_node_id": 23
+        },
+        {
+            "destination_node_id": 5,
+            "id": 26,
+            "name": "optional",
+            "source_node_id": 25
+        },
+        {
+            "destination_node_id": 5,
+            "id": 28,
+            "name": "optional",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 5,
+            "id": 30,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 7,
+            "id": 32,
+            "name": "a_part_of",
+            "source_node_id": 31
+        },
+        {
+            "destination_node_id": 7,
+            "id": 33,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 7,
+            "id": 34,
+            "name": "optional",
+            "source_node_id": 21
+        },
+        {
+            "destination_node_id": 7,
+            "id": 35,
+            "name": "optional",
+            "source_node_id": 25
+        },
+        {
+            "destination_node_id": 7,
+            "id": 37,
+            "name": "optional",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 7,
+            "id": 38,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 9,
+            "id": 39,
+            "name": "a_part_of",
+            "source_node_id": 17
+        },
+        {
+            "destination_node_id": 9,
+            "id": 40,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 9,
+            "id": 42,
+            "name": "a_part_of",
+            "source_node_id": 41
+        },
+        {
+            "destination_node_id": 9,
+            "id": 43,
+            "name": "optional",
+            "source_node_id": 23
+        },
+        {
+            "destination_node_id": 9,
+            "id": 44,
+            "name": "optional",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 9,
+            "id": 45,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 11,
+            "id": 46,
+            "name": "a_part_of",
+            "source_node_id": 31
+        },
+        {
+            "destination_node_id": 11,
+            "id": 47,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 11,
+            "id": 48,
+            "name": "a_part_of",
+            "source_node_id": 41
+        },
+        {
+            "destination_node_id": 11,
+            "id": 49,
+            "name": "optional",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 11,
+            "id": 50,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 13,
+            "id": 52,
+            "name": "a_part_of",
+            "source_node_id": 51
+        },
+        {
+            "destination_node_id": 13,
+            "id": 54,
+            "name": "a_part_of",
+            "source_node_id": 53
+        },
+        {
+            "destination_node_id": 13,
+            "id": 55,
+            "name": "optional",
+            "source_node_id": 23
+        },
+        {
+            "destination_node_id": 13,
+            "id": 56,
+            "name": "optional",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 13,
+            "id": 57,
+            "name": "a_part_of",
+            "source_node_id": 29
+        },
+        {
+            "destination_node_id": 15,
+            "id": 59,
+            "name": "a_part_of",
+            "source_node_id": 58
+        },
+        {
+            "destination_node_id": 15,
+            "id": 61,
+            "name": "a_part_of",
+            "source_node_id": 60
+        },
+        {
+            "destination_node_id": 15,
+            "id": 63,
+            "name": "a_part_of",
+            "source_node_id": 62
+        },
+        {
+            "destination_node_id": 62,
+            "id": 65,
+            "name": "is_instance",
+            "source_node_id": 64
+        },
+        {
+            "destination_node_id": 60,
+            "id": 66,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 60,
+            "id": 67,
+            "name": "a_part_of",
+            "source_node_id": 60
+        },
+        {
+            "destination_node_id": 60,
+            "id": 69,
+            "name": "a_part_of",
+            "source_node_id": 68
+        },
+        {
+            "destination_node_id": 68,
+            "id": 71,
+            "name": "is_instance",
+            "source_node_id": 70
+        },
+        {
+            "destination_node_id": 60,
+            "id": 72,
+            "name": "a_part_of",
+            "source_node_id": 19
+        },
+        {
+            "destination_node_id": 23,
+            "id": 74,
+            "name": "a_part_of",
+            "source_node_id": 73
+        },
+        {
+            "destination_node_id": 75,
+            "id": 76,
+            "name": "a_part_of",
+            "source_node_id": 53
+        },
+        {
+            "destination_node_id": 75,
+            "id": 77,
+            "name": "a_part_of",
+            "source_node_id": 75
+        },
+        {
+            "destination_node_id": 75,
+            "id": 78,
+            "name": "a_part_of",
+            "source_node_id": 68
+        },
+        {
+            "destination_node_id": 68,
+            "id": 79,
+            "name": "is_instance",
+            "source_node_id": 70
+        },
+        {
+            "destination_node_id": 75,
+            "id": 80,
+            "name": "a_part_of",
+            "source_node_id": 53
+        },
+        {
+            "destination_node_id": 19,
+            "id": 82,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 21,
+            "id": 83,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 41,
+            "id": 84,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 53,
+            "id": 85,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 25,
+            "id": 87,
+            "name": "a_part_of",
+            "source_node_id": 86
+        },
+        {
+            "destination_node_id": 86,
+            "id": 89,
+            "name": "is_instance",
+            "source_node_id": 88
+        },
+        {
+            "destination_node_id": 25,
+            "id": 91,
+            "name": "optional",
+            "source_node_id": 90
+        },
+        {
+            "destination_node_id": 25,
+            "id": 93,
+            "name": "a_part_of",
+            "source_node_id": 92
+        },
+        {
+            "destination_node_id": 25,
+            "id": 94,
+            "name": "optional",
+            "source_node_id": 25
+        },
+        {
+            "destination_node_id": 25,
+            "id": 96,
+            "name": "a_part_of",
+            "source_node_id": 95
+        },
+        {
+            "destination_node_id": 95,
+            "id": 98,
+            "name": "is_instance",
+            "source_node_id": 97
+        },
+        {
+            "destination_node_id": 90,
+            "id": 100,
+            "name": "a_part_of",
+            "source_node_id": 99
+        },
+        {
+            "destination_node_id": 90,
+            "id": 102,
+            "name": "a_part_of",
+            "source_node_id": 101
+        },
+        {
+            "destination_node_id": 90,
+            "id": 104,
+            "name": "a_part_of",
+            "source_node_id": 103
+        },
+        {
+            "destination_node_id": 27,
+            "id": 105,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 27,
+            "id": 107,
+            "name": "a_part_of",
+            "source_node_id": 106
+        },
+        {
+            "destination_node_id": 27,
+            "id": 108,
+            "name": "a_part_of",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 27,
+            "id": 109,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 27,
+            "id": 110,
+            "name": "a_part_of",
+            "source_node_id": 27
+        },
+        {
+            "destination_node_id": 27,
+            "id": 111,
+            "name": "a_part_of",
+            "source_node_id": 106
+        },
+        {
+            "destination_node_id": 106,
+            "id": 113,
+            "name": "a_part_of",
+            "source_node_id": 112
+        },
+        {
+            "destination_node_id": 106,
+            "id": 115,
+            "name": "a_part_of",
+            "source_node_id": 114
+        },
+        {
+            "destination_node_id": 112,
+            "id": 117,
+            "name": "a_part_of",
+            "source_node_id": 116
+        },
+        {
+            "destination_node_id": 116,
+            "id": 119,
+            "name": "is_instance",
+            "source_node_id": 118
+        },
+        {
+            "destination_node_id": 112,
+            "id": 121,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 112,
+            "id": 123,
+            "name": "a_part_of",
+            "source_node_id": 122
+        },
+        {
+            "destination_node_id": 112,
+            "id": 124,
+            "name": "a_part_of",
+            "source_node_id": 62
+        },
+        {
+            "destination_node_id": 62,
+            "id": 125,
+            "name": "is_instance",
+            "source_node_id": 64
+        },
+        {
+            "destination_node_id": 114,
+            "id": 126,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 114,
+            "id": 127,
+            "name": "a_part_of",
+            "source_node_id": 122
+        },
+        {
+            "destination_node_id": 114,
+            "id": 128,
+            "name": "a_part_of",
+            "source_node_id": 62
+        },
+        {
+            "destination_node_id": 62,
+            "id": 129,
+            "name": "is_instance",
+            "source_node_id": 64
+        },
+        {
+            "destination_node_id": 36,
+            "id": 130,
+            "name": "a_part_of",
+            "source_node_id": 1
+        },
+        {
+            "destination_node_id": 36,
+            "id": 131,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 36,
+            "id": 133,
+            "name": "a_part_of",
+            "source_node_id": 132
+        },
+        {
+            "destination_node_id": 36,
+            "id": 134,
+            "name": "a_part_of",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 36,
+            "id": 135,
+            "name": "a_part_of",
+            "source_node_id": 1
+        },
+        {
+            "destination_node_id": 36,
+            "id": 136,
+            "name": "a_part_of",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 36,
+            "id": 137,
+            "name": "a_part_of",
+            "source_node_id": 3
+        },
+        {
+            "destination_node_id": 36,
+            "id": 138,
+            "name": "a_part_of",
+            "source_node_id": 36
+        },
+        {
+            "destination_node_id": 36,
+            "id": 139,
+            "name": "a_part_of",
+            "source_node_id": 132
+        },
+        {
+            "destination_node_id": 132,
+            "id": 141,
+            "name": "a_part_of",
+            "source_node_id": 140
+        },
+        {
+            "destination_node_id": 132,
+            "id": 143,
+            "name": "a_part_of",
+            "source_node_id": 142
+        },
+        {
+            "destination_node_id": 140,
+            "id": 144,
+            "name": "a_part_of",
+            "source_node_id": 116
+        },
+        {
+            "destination_node_id": 116,
+            "id": 145,
+            "name": "is_instance",
+            "source_node_id": 118
+        },
+        {
+            "destination_node_id": 140,
+            "id": 146,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 140,
+            "id": 147,
+            "name": "a_part_of",
+            "source_node_id": 122
+        },
+        {
+            "destination_node_id": 140,
+            "id": 149,
+            "name": "optional",
+            "source_node_id": 148
+        },
+        {
+            "destination_node_id": 140,
+            "id": 151,
+            "name": "a_part_of",
+            "source_node_id": 150
+        },
+        {
+            "destination_node_id": 142,
+            "id": 152,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 142,
+            "id": 153,
+            "name": "a_part_of",
+            "source_node_id": 122
+        },
+        {
+            "destination_node_id": 142,
+            "id": 154,
+            "name": "optional",
+            "source_node_id": 148
+        },
+        {
+            "destination_node_id": 142,
+            "id": 155,
+            "name": "a_part_of",
+            "source_node_id": 150
+        },
+        {
+            "destination_node_id": 122,
+            "id": 157,
+            "name": "a_part_of",
+            "source_node_id": 156
+        },
+        {
+            "destination_node_id": 122,
+            "id": 159,
+            "name": "a_part_of",
+            "source_node_id": 158
+        },
+        {
+            "destination_node_id": 122,
+            "id": 160,
+            "name": "a_part_of",
+            "source_node_id": 68
+        },
+        {
+            "destination_node_id": 68,
+            "id": 161,
+            "name": "is_instance",
+            "source_node_id": 70
+        },
+        {
+            "destination_node_id": 122,
+            "id": 163,
+            "name": "a_part_of",
+            "source_node_id": 162
+        },
+        {
+            "destination_node_id": 162,
+            "id": 165,
+            "name": "is_instance",
+            "source_node_id": 164
+        },
+        {
+            "destination_node_id": 122,
+            "id": 166,
+            "name": "a_part_of",
+            "source_node_id": 162
+        },
+        {
+            "destination_node_id": 162,
+            "id": 167,
+            "name": "is_instance",
+            "source_node_id": 164
+        },
+        {
+            "destination_node_id": 122,
+            "id": 168,
+            "name": "a_part_of",
+            "source_node_id": 162
+        },
+        {
+            "destination_node_id": 162,
+            "id": 169,
+            "name": "is_instance",
+            "source_node_id": 164
+        },
+        {
+            "destination_node_id": 122,
+            "id": 171,
+            "name": "a_part_of",
+            "source_node_id": 170
+        },
+        {
+            "destination_node_id": 170,
+            "id": 173,
+            "name": "is_instance",
+            "source_node_id": 172
+        },
+        {
+            "destination_node_id": 122,
+            "id": 174,
+            "name": "a_part_of",
+            "source_node_id": 158
+        },
+        {
+            "destination_node_id": 122,
+            "id": 175,
+            "name": "a_part_of",
+            "source_node_id": 68
+        },
+        {
+            "destination_node_id": 68,
+            "id": 176,
+            "name": "is_instance",
+            "source_node_id": 70
+        },
+        {
+            "destination_node_id": 122,
+            "id": 178,
+            "name": "optional",
+            "source_node_id": 177
+        },
+        {
+            "destination_node_id": 156,
+            "id": 180,
+            "name": "a_part_of",
+            "source_node_id": 179
+        },
+        {
+            "destination_node_id": 158,
+            "id": 182,
+            "name": "a_part_of",
+            "source_node_id": 181
+        },
+        {
+            "destination_node_id": 158,
+            "id": 183,
+            "name": "a_part_of",
+            "source_node_id": 158
+        },
+        {
+            "destination_node_id": 158,
+            "id": 184,
+            "name": "a_part_of",
+            "source_node_id": 181
+        },
+        {
+            "destination_node_id": 181,
+            "id": 185,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 181,
+            "id": 186,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 181,
+            "id": 187,
+            "name": "a_part_of",
+            "source_node_id": 179
+        },
+        {
+            "destination_node_id": 181,
+            "id": 188,
+            "name": "optional",
+            "source_node_id": 120
+        },
+        {
+            "destination_node_id": 181,
+            "id": 189,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 179,
+            "id": 190,
+            "name": "a_part_of",
+            "source_node_id": 81
+        },
+        {
+            "destination_node_id": 120,
+            "id": 192,
+            "name": "a_part_of",
+            "source_node_id": 191
+        },
+        {
+            "destination_node_id": 200,
+            "id": 202,
+            "name": "optional",
+            "source_node_id": 201
+        },
+        {
+            "destination_node_id": 200,
+            "id": 204,
+            "name": "a_part_of",
+            "source_node_id": 203
+        },
+        {
+            "destination_node_id": 203,
+            "id": 206,
+            "name": "is_instance",
+            "source_node_id": 205
+        },
+        {
+            "destination_node_id": 200,
+            "id": 208,
+            "name": "a_part_of",
+            "source_node_id": 207
+        },
+        {
+            "destination_node_id": 200,
+            "id": 2010,
+            "name": "optional",
+            "source_node_id": 209
+        },
+        {
+            "destination_node_id": 200,
+            "id": 2012,
+            "name": "optional",
+            "source_node_id": 2011
+        },
+        {
+            "destination_node_id": 200,
+            "id": 2014,
+            "name": "a_part_of",
+            "source_node_id": 2013
+        },
+        {
+            "destination_node_id": 201,
+            "id": 2016,
+            "name": "is_a",
+            "source_node_id": 2015
+        },
+        {
+            "destination_node_id": 2015,
+            "id": 2018,
+            "name": "a_part_of",
+            "source_node_id": 2017
+        },
+        {
+            "destination_node_id": 201,
+            "id": 2020,
+            "name": "is_a",
+            "source_node_id": 2019
+        },
+        {
+            "destination_node_id": 2019,
+            "id": 2021,
+            "name": "a_part_of",
+            "source_node_id": 201
+        },
+        {
+            "destination_node_id": 2019,
+            "id": 2022,
+            "name": "a_part_of",
+            "source_node_id": 2017
+        },
+        {
+            "destination_node_id": 2017,
+            "id": 2024,
+            "name": "is_a",
+            "source_node_id": 2023
+        },
+        {
+            "destination_node_id": 2023,
+            "id": 2026,
+            "name": "a_part_of",
+            "source_node_id": 2025
+        },
+        {
+            "destination_node_id": 2025,
+            "id": 2028,
+            "name": "is_instance",
+            "source_node_id": 2027
+        },
+        {
+            "destination_node_id": 2017,
+            "id": 2030,
+            "name": "is_a",
+            "source_node_id": 2029
+        },
+        {
+            "destination_node_id": 2029,
+            "id": 2032,
+            "name": "a_part_of",
+            "source_node_id": 2031
+        },
+        {
+            "destination_node_id": 2031,
+            "id": 2034,
+            "name": "is_instance",
+            "source_node_id": 2033
+        },
+        {
+            "destination_node_id": 2017,
+            "id": 2036,
+            "name": "is_a",
+            "source_node_id": 2035
+        },
+        {
+            "destination_node_id": 2035,
+            "id": 2038,
+            "name": "a_part_of",
+            "source_node_id": 2037
+        },
+        {
+            "destination_node_id": 2037,
+            "id": 2040,
+            "name": "is_instance",
+            "source_node_id": 2039
+        },
+        {
+            "destination_node_id": 209,
+            "id": 2042,
+            "name": "a_part_of",
+            "source_node_id": 2041
+        },
+        {
+            "destination_node_id": 2041,
+            "id": 2044,
+            "name": "is_instance",
+            "source_node_id": 2043
+        },
+        {
+            "destination_node_id": 209,
+            "id": 2046,
+            "name": "a_part_of",
+            "source_node_id": 2045
+        },
+        {
+            "destination_node_id": 2011,
+            "id": 2048,
+            "name": "a_part_of",
+            "source_node_id": 2047
+        },
+        {
+            "destination_node_id": 2047,
+            "id": 2050,
+            "name": "is_instance",
+            "source_node_id": 2049
+        },
+        {
+            "destination_node_id": 2011,
+            "id": 2052,
+            "name": "a_part_of",
+            "source_node_id": 2051
+        },
+        {
+            "destination_node_id": 2051,
+            "id": 2054,
+            "name": "is_a",
+            "source_node_id": 2053
+        },
+        {
+            "destination_node_id": 2053,
+            "id": 2056,
+            "name": "a_part_of",
+            "source_node_id": 2055
+        },
+        {
+            "destination_node_id": 2051,
+            "id": 2058,
+            "name": "is_a",
+            "source_node_id": 2057
+        },
+        {
+            "destination_node_id": 2057,
+            "id": 2059,
+            "name": "a_part_of",
+            "source_node_id": 2051
+        },
+        {
+            "destination_node_id": 2057,
+            "id": 2061,
+            "name": "a_part_of",
+            "source_node_id": 2060
+        },
+        {
+            "destination_node_id": 2060,
+            "id": 2063,
+            "name": "is_instance",
+            "source_node_id": 2062
+        },
+        {
+            "destination_node_id": 2057,
+            "id": 2064,
+            "name": "a_part_of",
+            "source_node_id": 2055
+        },
+        {
+            "destination_node_id": 2013,
+            "id": 2066,
+            "name": "a_part_of",
+            "source_node_id": 2065
+        },
+        {
+            "destination_node_id": 2065,
+            "id": 2068,
+            "name": "is_instance",
+            "source_node_id": 2067
+        },
+        {
+            "destination_node_id": 2013,
+            "id": 2070,
+            "name": "optional",
+            "source_node_id": 2069
+        },
+        {
+            "destination_node_id": 2013,
+            "id": 2072,
+            "name": "a_part_of",
+            "source_node_id": 2071
+        },
+        {
+            "destination_node_id": 2071,
+            "id": 2074,
+            "name": "is_instance",
+            "source_node_id": 2073
+        },
+        {
+            "destination_node_id": 2069,
+            "id": 2076,
+            "name": "is_a",
+            "source_node_id": 2075
+        },
+        {
+            "destination_node_id": 2075,
+            "id": 2078,
+            "name": "a_part_of",
+            "source_node_id": 2077
+        },
+        {
+            "destination_node_id": 2069,
+            "id": 2080,
+            "name": "is_a",
+            "source_node_id": 2079
+        },
+        {
+            "destination_node_id": 2079,
+            "id": 2081,
+            "name": "a_part_of",
+            "source_node_id": 2069
+        },
+        {
+            "destination_node_id": 2079,
+            "id": 2082,
+            "name": "a_part_of",
+            "source_node_id": 2077
+        },
+        {
+            "destination_node_id": 2077,
+            "id": 2084,
+            "name": "a_part_of",
+            "source_node_id": 2083
+        },
+        {
+            "destination_node_id": 2083,
+            "id": 2086,
+            "name": "a_part_of",
+            "source_node_id": 2085
+        },
+        {
+            "destination_node_id": 2087,
+            "id": 2089,
+            "name": "is_a",
+            "source_node_id": 2088
+        },
+        {
+            "destination_node_id": 2088,
+            "id": 2091,
+            "name": "a_part_of",
+            "source_node_id": 2090
+        },
+        {
+            "destination_node_id": 2087,
+            "id": 2093,
+            "name": "is_a",
+            "source_node_id": 2092
+        },
+        {
+            "destination_node_id": 2092,
+            "id": 2094,
+            "name": "a_part_of",
+            "source_node_id": 2087
+        },
+        {
+            "destination_node_id": 2092,
+            "id": 2095,
+            "name": "a_part_of",
+            "source_node_id": 2060
+        },
+        {
+            "destination_node_id": 2060,
+            "id": 2096,
+            "name": "is_instance",
+            "source_node_id": 2062
+        },
+        {
+            "destination_node_id": 2092,
+            "id": 2097,
+            "name": "a_part_of",
+            "source_node_id": 2090
+        },
+        {
+            "destination_node_id": 2090,
+            "id": 2099,
+            "name": "a_part_of",
+            "source_node_id": 2098
+        },
+        {
+            "destination_node_id": 2090,
+            "id": 20101,
+            "name": "a_part_of",
+            "source_node_id": 20100
+        },
+        {
+            "destination_node_id": 20102,
+            "id": 20104,
+            "name": "is_a",
+            "source_node_id": 20103
+        },
+        {
+            "destination_node_id": 20103,
+            "id": 20105,
+            "name": "a_part_of",
+            "source_node_id": 2045
+        },
+        {
+            "destination_node_id": 20102,
+            "id": 20107,
+            "name": "is_a",
+            "source_node_id": 20106
+        },
+        {
+            "destination_node_id": 20106,
+            "id": 20108,
+            "name": "a_part_of",
+            "source_node_id": 20102
+        },
+        {
+            "destination_node_id": 20106,
+            "id": 20109,
+            "name": "a_part_of",
+            "source_node_id": 2060
+        },
+        {
+            "destination_node_id": 2060,
+            "id": 20110,
+            "name": "is_instance",
+            "source_node_id": 2062
+        },
+        {
+            "destination_node_id": 20106,
+            "id": 20111,
+            "name": "a_part_of",
+            "source_node_id": 2045
+        },
+        {
+            "destination_node_id": 2085,
+            "id": 20113,
+            "name": "a_part_of",
+            "source_node_id": 20112
+        },
+        {
+            "destination_node_id": 2085,
+            "id": 20115,
+            "name": "a_part_of",
+            "source_node_id": 20114
+        },
+        {
+            "destination_node_id": 20112,
+            "id": 20117,
+            "name": "optional",
+            "source_node_id": 20116
+        },
+        {
+            "destination_node_id": 20112,
+            "id": 20119,
+            "name": "a_part_of",
+            "source_node_id": 20118
+        },
+        {
+            "destination_node_id": 20112,
+            "id": 20121,
+            "name": "a_part_of",
+            "source_node_id": 20120
+        },
+        {
+            "destination_node_id": 20112,
+            "id": 20123,
+            "name": "optional",
+            "source_node_id": 20122
+        },
+        {
+            "destination_node_id": 20118,
+            "id": 20125,
+            "name": "is_a",
+            "source_node_id": 20124
+        },
+        {
+            "destination_node_id": 20124,
+            "id": 20126,
+            "name": "a_part_of",
+            "source_node_id": 2098
+        },
+        {
+            "destination_node_id": 20118,
+            "id": 20128,
+            "name": "is_a",
+            "source_node_id": 20127
+        },
+        {
+            "destination_node_id": 20127,
+            "id": 20130,
+            "name": "a_part_of",
+            "source_node_id": 20129
+        },
+        {
+            "destination_node_id": 20129,
+            "id": 20132,
+            "name": "is_instance",
+            "source_node_id": 20131
+        },
+        {
+            "destination_node_id": 20116,
+            "id": 20134,
+            "name": "is_a",
+            "source_node_id": 20133
+        },
+        {
+            "destination_node_id": 20133,
+            "id": 20136,
+            "name": "a_part_of",
+            "source_node_id": 20135
+        },
+        {
+            "destination_node_id": 20116,
+            "id": 20138,
+            "name": "is_a",
+            "source_node_id": 20137
+        },
+        {
+            "destination_node_id": 20137,
+            "id": 20139,
+            "name": "a_part_of",
+            "source_node_id": 20116
+        },
+        {
+            "destination_node_id": 20137,
+            "id": 20140,
+            "name": "a_part_of",
+            "source_node_id": 20135
+        },
+        {
+            "destination_node_id": 20135,
+            "id": 20142,
+            "name": "is_a",
+            "source_node_id": 20141
+        },
+        {
+            "destination_node_id": 20141,
+            "id": 20143,
+            "name": "a_part_of",
+            "source_node_id": 2025
+        },
+        {
+            "destination_node_id": 2025,
+            "id": 20144,
+            "name": "is_instance",
+            "source_node_id": 2027
+        },
+        {
+            "destination_node_id": 20135,
+            "id": 20146,
+            "name": "is_a",
+            "source_node_id": 20145
+        },
+        {
+            "destination_node_id": 20145,
+            "id": 20148,
+            "name": "a_part_of",
+            "source_node_id": 20147
+        },
+        {
+            "destination_node_id": 20147,
+            "id": 20150,
+            "name": "is_instance",
+            "source_node_id": 20149
+        },
+        {
+            "destination_node_id": 20135,
+            "id": 20152,
+            "name": "is_a",
+            "source_node_id": 20151
+        },
+        {
+            "destination_node_id": 20151,
+            "id": 20154,
+            "name": "a_part_of",
+            "source_node_id": 20153
+        },
+        {
+            "destination_node_id": 20153,
+            "id": 20156,
+            "name": "is_instance",
+            "source_node_id": 20155
+        },
+        {
+            "destination_node_id": 20135,
+            "id": 20158,
+            "name": "is_a",
+            "source_node_id": 20157
+        },
+        {
+            "destination_node_id": 20157,
+            "id": 20160,
+            "name": "a_part_of",
+            "source_node_id": 20159
+        },
+        {
+            "destination_node_id": 20159,
+            "id": 20162,
+            "name": "is_instance",
+            "source_node_id": 20161
+        },
+        {
+            "destination_node_id": 20135,
+            "id": 20164,
+            "name": "is_a",
+            "source_node_id": 20163
+        },
+        {
+            "destination_node_id": 20163,
+            "id": 20165,
+            "name": "a_part_of",
+            "source_node_id": 2031
+        },
+        {
+            "destination_node_id": 2031,
+            "id": 20166,
+            "name": "is_instance",
+            "source_node_id": 2033
+        },
+        {
+            "destination_node_id": 20135,
+            "id": 20168,
+            "name": "is_a",
+            "source_node_id": 20167
+        },
+        {
+            "destination_node_id": 20167,
+            "id": 20169,
+            "name": "a_part_of",
+            "source_node_id": 2037
+        },
+        {
+            "destination_node_id": 2037,
+            "id": 20170,
+            "name": "is_instance",
+            "source_node_id": 2039
+        },
+        {
+            "destination_node_id": 20135,
+            "id": 20172,
+            "name": "is_a",
+            "source_node_id": 20171
+        },
+        {
+            "destination_node_id": 20171,
+            "id": 20174,
+            "name": "a_part_of",
+            "source_node_id": 20173
+        },
+        {
+            "destination_node_id": 20173,
+            "id": 20176,
+            "name": "is_instance",
+            "source_node_id": 20175
+        },
+        {
+            "destination_node_id": 20135,
+            "id": 20178,
+            "name": "is_a",
+            "source_node_id": 20177
+        },
+        {
+            "destination_node_id": 20177,
+            "id": 20180,
+            "name": "a_part_of",
+            "source_node_id": 20179
+        },
+        {
+            "destination_node_id": 20179,
+            "id": 20182,
+            "name": "is_instance",
+            "source_node_id": 20181
+        },
+        {
+            "destination_node_id": 20120,
+            "id": 20183,
+            "name": "a_part_of",
+            "source_node_id": 207
+        },
+        {
+            "destination_node_id": 20120,
+            "id": 20184,
+            "name": "optional",
+            "source_node_id": 2087
+        },
+        {
+            "destination_node_id": 2090,
+            "id": 20185,
+            "name": "a_part_of",
+            "source_node_id": 2098
+        },
+        {
+            "destination_node_id": 2090,
+            "id": 20186,
+            "name": "a_part_of",
+            "source_node_id": 20100
+        },
+        {
+            "destination_node_id": 5,
+            "id": 20187,
+            "name": "class_transform",
+            "source_node_id": 200
+        },
+        {
+            "destination_node_id": 200,
+            "id": 20188,
+            "name": "class_transform",
+            "source_node_id": 5
+        },
+        {
+            "destination_node_id": 21,
+            "id": 20189,
+            "name": "transform",
+            "source_node_id": 2045
+        },
+        {
+            "destination_node_id": 2045,
+            "id": 20190,
+            "name": "transform",
+            "source_node_id": 21
+        },
+        {
+            "destination_node_id": 53,
+            "id": 20191,
+            "name": "transform",
+            "source_node_id": 2045
+        },
+        {
+            "destination_node_id": 2045,
+            "id": 20192,
+            "name": "transform",
+            "source_node_id": 53
+        },
+        {
+            "destination_node_id": 106,
+            "id": 20193,
+            "name": "method_transform",
+            "source_node_id": 2085
+        },
+        {
+            "destination_node_id": 2085,
+            "id": 20194,
+            "name": "method_transform",
+            "source_node_id": 106
+        }
+    ]
+}

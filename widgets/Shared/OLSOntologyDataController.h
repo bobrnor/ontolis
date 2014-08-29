@@ -23,6 +23,8 @@ class OLSOntologyDataController {
     mutable QSet<long> m_changedNodeIds;
     mutable QSet<long> m_changedRelationIds;
 
+    QMap<QString, QVariantMap> m_categories;
+
     QString m_sourceCode;
 
     void removeRelatedRelations(OLSOntologyNodeData *nodeData);
@@ -33,6 +35,8 @@ class OLSOntologyDataController {
                            QMap<long, QPointF> nodePositions,
                            QSet<long> changedNodeIds,
                            QSet<long> changedRelationIds);
+
+    void updateCategories();
 
   public:
     OLSOntologyDataController();
@@ -60,6 +64,10 @@ class OLSOntologyDataController {
 
     OLSOntologyNodeData *findNode(const QString &nodeName) const;
     OLSOntologyNodeData *findNode(const QString &nodeName, OLSOntologyNodeData *startNode) const;
+
+    QList<QString> categoryNames() const;
+    QVariantMap getCategory(const QString &categoryName) const;
+    void setCategory(const QString &categoryName, QVariantMap category);
 
     QStringList pathToNode(long id);
 

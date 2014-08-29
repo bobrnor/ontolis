@@ -206,7 +206,7 @@ def process_node(node):
 
 
 def print_supported_extensions():
-    print ".owl"
+    print "owl_conv"
 
 
 def convert_to_internal_format(file_path):

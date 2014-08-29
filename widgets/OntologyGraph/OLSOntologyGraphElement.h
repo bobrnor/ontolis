@@ -7,7 +7,7 @@
 #include "../Shared/OLSOntologyDataController.h"
 
 class OLSOntologyGraphElement {
-  protected:
+  public:
     long m_id;
     QString m_name;
 

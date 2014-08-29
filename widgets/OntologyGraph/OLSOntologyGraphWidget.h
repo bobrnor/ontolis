@@ -32,7 +32,7 @@ class OLSOntologyGraphWidget : public QWidget {
     void dropEvent(QDropEvent *event);
     void dragEnterEvent(QDragEnterEvent *event);
     
-  private:
+  public:
     Ui::OLSOntologyGraphWidget *ui;
 
     QTextEdit *m_sourceCodeViewer;

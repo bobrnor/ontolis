@@ -76,8 +76,14 @@ void OLSOntologyGraphNodeItem::attributesChanged() {
   OLSOntologyNodeData *data = relatedDataController()->getNodeById(m_id);
   relatedDataController()->nodeAttributesChanged(m_id, data->attributes);
 
-  if (data->attributes.keys().contains("gui-attributes")) {
+  QVariantMap category = m_dataController->getCategory(data->name);
+
+  if (data->attributes.keys().contains("gui-attributes") || !category.isEmpty()) {
     QVariantMap guiAttributes = data->attributes.value("gui-attributes").toMap();
+
+    if (!category.isEmpty()) {
+        guiAttributes = category;
+    }
 
     if (guiAttributes.contains("text_color")) {
       QString textColorHex = guiAttributes["text_color"].toString();
@@ -91,6 +97,13 @@ void OLSOntologyGraphNodeItem::attributesChanged() {
 
     if (guiAttributes.contains("shape_name")) {
       m_shapeName = guiAttributes["shape_name"].toString();
+    }
+
+    if (guiAttributes.contains("image_path")) {
+      m_image = QImage(guiAttributes["image_path"].toString());
+      if (!m_image.isNull()) {
+          this->setRect(m_image.rect());
+      }
     }
   }
 
@@ -146,17 +159,22 @@ void OLSOntologyGraphNodeItem::paint(QPainter *painter, const QStyleOptionGraphi
   painter->setPen(shapePen);
   painter->setBrush(shapeBrush);
 
-  if (m_shapeName == "rect") {
-    painter->drawRect(this->rect());
-  }
-  else if (m_shapeName == "ellipse") {
-    painter->drawEllipse(this->rect());
-  }
-  else if (m_shapeName == "rounded_rect") {
-    painter->drawRoundedRect(this->rect(), 5.0, 5.0);
+  if (!m_image.isNull()) {
+      painter->drawImage(this->rect(), m_image);
   }
   else {
-    painter->drawRect(this->rect());
+      if (m_shapeName == "rect") {
+        painter->drawRect(this->rect());
+      }
+      else if (m_shapeName == "ellipse") {
+        painter->drawEllipse(this->rect());
+      }
+      else if (m_shapeName == "rounded_rect") {
+        painter->drawRoundedRect(this->rect(), 5.0, 5.0);
+      }
+      else {
+        painter->drawRect(this->rect());
+      }
   }
 
   painter->setPen(textPen);  

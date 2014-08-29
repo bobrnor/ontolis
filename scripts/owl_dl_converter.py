@@ -27,6 +27,9 @@ class OntologyNode:
         self.pos_y = random.uniform(0, 4000)
         self.meta = {}
 
+    def owl_ready_name(self):
+        return "http://psu.ru/" + self.name.replace("<", "").replace(">", "").replace(" ", "_").replace("#", "").replace("{", "").replace("}", "")
+
     def json(self):
         json_data = {
             'id': self.id,
@@ -38,7 +41,7 @@ class OntologyNode:
         return json_data
 
     def from_json(self, json_data):
-        self.id = json_data['id']
+        self.id = int(json_data['id'])
         self.name = json_data['name']
         self.pos_x = json_data['position_x']
         self.pos_y = json_data['position_y']
@@ -70,9 +73,9 @@ class OntologyRelation:
     def from_json(self, json_data, nodes):
         self.id = json_data['id']
         self.name = json_data['name']
-        node_id = json_data['source_node_id']
+        node_id = int(json_data['source_node_id'])
         self.source_node = next((x for x in nodes if x.id == node_id), None)
-        node_id = json_data['destination_node_id']
+        node_id = int(json_data['destination_node_id'])
         self.destination_node = next((x for x in nodes if x.id == node_id), None)
         if 'meta' in json_data:
             self.meta = json_data['meta']
@@ -140,7 +143,7 @@ class Ontology:
     def from_json(self, json_data):
         if 'meta' in json_data:
             self.meta = json_data['meta']
-        self._next_id = json_data['last_id'] + 1
+        self._next_id = int(json_data['last_id']) + 1
         self.nodes = []
         self.relations = []
 
@@ -202,7 +205,7 @@ class OWLParser:
 
     def parse_to_ont(self):
         self._bypass(self._etree.getroot())
-        print(self._ontology.json())
+        return self._ontology.json()
 
     def _bypass(self, root, context=None):
         context = {'n0': None, 'r': None, 'n1': None} if not context else copy.copy(context)
@@ -228,7 +231,8 @@ class OWLParser:
         if tag_name in self._handlers:
             self._handlers[tag_name](element, context)
         else:
-            print(element.tag)
+            # print(element.tag)
+            pass
 
     def _process_class(self, element, context):
         class_id = element.attrib.get('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID')
@@ -414,7 +418,7 @@ class OWLParser:
         value_id = element.attrib.get("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource")
         value_node = self._ontology.create_node_if_needed(value_id)
         context['n1'] = value_node
-        self._ontology.create_relation('has_value', context['n0'], value_node)
+        self._ontology.create_relation('hasValue', context['n0'], value_node)
 
 
 #-----------------------------------------------------------------
@@ -427,7 +431,7 @@ class ONTParser:
         self._ontology.from_json(json_data)
         self._bypass_sequence = self._node_sequence()
         self._xml_root = etree.fromstring(
-            '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xml:base="http://cidoc.ics.forth.gr/rdfs/cidoc_crm_v3.4.9.rdfs" xml:lang="en"/>')
+            '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xml:base="http://psu.ru/" xml:lang="en"/>')
         self._top_element = self._xml_root
         self._put_owl()
         self._sudden_root = None
@@ -465,7 +469,7 @@ class ONTParser:
             'disjointWith': self._process_disjoint_with,
             'comment': self._pass
         }
-        print(self._bypass_sequence)
+        # print(self._bypass_sequence)
 
     def _put_owl(self):
         if "Ontology" in self._ontology.meta:
@@ -477,12 +481,12 @@ class ONTParser:
         while len(self._bypass_sequence):
             from_node = next(x for x in self._ontology.nodes if x.id == self._bypass_sequence[0])
             self._bypass(from_node, [], self._xml_root)
-        self._print_pretty_xml()
+        return self._print_pretty_xml()
 
     def _print_pretty_xml(self):
         xml_string = etree.tostring(self._top_element, encoding='UTF-8')
         reparsed_xml = xml.dom.minidom.parseString(xml_string)
-        print(reparsed_xml.toprettyxml(indent='\t'))
+        return reparsed_xml.toprettyxml(indent='\t')
 
     def _node_sequence(self):
         relation_counts = {}
@@ -574,10 +578,10 @@ class ONTParser:
     def _process_is_instance(self, context, last_xml_element):
         last_relation = context[len(context) - 1]
         if last_relation.destination_node.name == "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}Property":
-            element = self._find_xml_element_by_id(last_relation.destination_node.name, last_relation.source_node.name)
+            element = self._find_xml_element_by_id(last_relation.destination_node.name, last_relation.source_node.owl_ready_name())
             if element is None:
                 element = etree.Element(last_relation.destination_node.name,
-                                        {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID": last_relation.source_node.name})
+                                        {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID": last_relation.source_node.owl_ready_name()})
                 self._add_comment(context, element)
                 self._xml_root.append(element)
                 self._sudden_root = element
@@ -585,10 +589,10 @@ class ONTParser:
                 self._stop_flag = True
             return element
         elif last_relation.destination_node.name == "{http://www.w3.org/2000/01/rdf-schema#}Class":
-            element = self._find_xml_element_by_id(last_relation.destination_node.name, last_relation.source_node.name)
+            element = self._find_xml_element_by_id(last_relation.destination_node.name, last_relation.source_node.owl_ready_name())
             if element is None:
                 element = etree.Element(last_relation.destination_node.name,
-                                        {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID": last_relation.source_node.name})
+                                        {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID": last_relation.source_node.owl_ready_name()})
                 self._add_comment(context, element)
                 self._xml_root.append(element)
                 self._sudden_root = element
@@ -596,10 +600,10 @@ class ONTParser:
                 self._stop_flag = True
             return element
         elif last_relation.destination_node.name == "{http://www.w3.org/2002/07/owl#}Class":
-            element = self._find_xml_element_by_about(last_relation.destination_node.name, last_relation.source_node.name)
+            element = self._find_xml_element_by_about(last_relation.destination_node.name, last_relation.source_node.owl_ready_name())
             if element is None:
                 element = etree.Element(last_relation.destination_node.name,
-                                        {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about": last_relation.source_node.name})
+                                        {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about": last_relation.source_node.owl_ready_name()})
                 self._add_comment(context, element)
                 self._xml_root.append(element)
                 self._sudden_root = element
@@ -607,10 +611,10 @@ class ONTParser:
                 self._stop_flag = True
             return element
         elif last_relation.destination_node.name == "{http://www.w3.org/2002/07/owl#}ObjectProperty":
-            element = self._find_xml_element_by_about(last_relation.destination_node.name, last_relation.source_node.name)
+            element = self._find_xml_element_by_about(last_relation.destination_node.name, last_relation.source_node.owl_ready_name())
             if element is None:
                 element = etree.Element(last_relation.destination_node.name,
-                                        {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about": last_relation.source_node.name})
+                                        {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about": last_relation.source_node.owl_ready_name()})
                 self._add_comment(context, element)
                 self._xml_root.append(element)
                 self._sudden_root = element
@@ -623,7 +627,7 @@ class ONTParser:
     def _process_has_domain(context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/2000/01/rdf-schema#}domain",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
@@ -631,14 +635,14 @@ class ONTParser:
     def _process_has_range(context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/2000/01/rdf-schema#}range",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
     def _process_sub_class_of(self, context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/2000/01/rdf-schema#}subClassOf",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
@@ -654,7 +658,7 @@ class ONTParser:
     def _process_sub_property_of(context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/2000/01/rdf-schema#}subPropertyOf",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
@@ -662,7 +666,7 @@ class ONTParser:
     def _process_disjoint_with(context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/2002/07/owl#}disjointWith",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
@@ -670,7 +674,7 @@ class ONTParser:
     def _process_inverse_of(context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/2002/07/owl#}inverseOf",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
@@ -678,7 +682,7 @@ class ONTParser:
     def _process_type(context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}type",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
@@ -686,7 +690,7 @@ class ONTParser:
     def _process_on_property(context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/2002/07/owl#}onProperty",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
@@ -694,7 +698,7 @@ class ONTParser:
     def _process_some_values_from(context, last_xml_element):
         last_relation = context[len(context) - 1]
         element = etree.Element("{http://www.w3.org/2002/07/owl#}someValuesFrom",
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         return element
 
@@ -720,7 +724,7 @@ class ONTParser:
             tag = "minCardinality"
 
         element = etree.Element("{http://www.w3.org/2002/07/owl#}" + tag,
-                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}datatype": '#' + last_relation.destination_node.name})
+                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}datatype": '#' + last_relation.destination_node.owl_ready_name()})
         last_xml_element.append(element)
         self._sudden_root = element
         return element
@@ -733,15 +737,15 @@ class ONTParser:
 
     def _pass(self, context, last_xml_element):
         last_relation = context[len(context) - 1]
-        source_element = self._find_xml_element_by_id("{http://www.w3.org/2002/07/owl#}Class", last_relation.source_node.name)
+        source_element = self._find_xml_element_by_id("{http://www.w3.org/2002/07/owl#}Class", last_relation.source_node.owl_ready_name())
         if source_element is None:
             source_element = etree.Element("{http://www.w3.org/2002/07/owl#}Class",
-                                           {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID": last_relation.source_node.name})
+                                           {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID": last_relation.source_node.owl_ready_name()})
 
-        destination_element = self._find_xml_element_by_id("{http://www.w3.org/2002/07/owl#}Class", last_relation.destination_node.name)
+        destination_element = self._find_xml_element_by_id("{http://www.w3.org/2002/07/owl#}Class", last_relation.destination_node.owl_ready_name())
         if destination_element is None:
             destination_element = etree.Element("{http://www.w3.org/2002/07/owl#}Class",
-                                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID": last_relation.destination_node.name})
+                                                {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}ID": last_relation.destination_node.owl_ready_name()})
 
         property_element = self._find_xml_element_by_id("{http://www.w3.org/2002/07/owl#}ObjectProperty", last_relation.name)
         if property_element is None:
@@ -753,7 +757,7 @@ class ONTParser:
         on_property_elemnt = etree.Element("{http://www.w3.org/2002/07/owl#}onProperty",
                                            {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": last_relation.name})
         has_value_element = etree.Element("{http://www.w3.org/2002/07/owl#}hasValue",
-                                          {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": "#" + last_relation.destination_node.name})
+                                          {"{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource": "#" + last_relation.destination_node.owl_ready_name()})
         restriction_element.append(on_property_elemnt)
         restriction_element.append(has_value_element)
         sub_class_element.append(restriction_element)
@@ -768,19 +772,17 @@ class ONTParser:
 
 
 def print_supported_extensions():
-    return '.owl'
+    print '.owl:.rdfs:.rdf'
 
 
 def convert_to_internal_format(file_path):
     parser = OWLParser(file(file_path))
-    parser.parse_to_ont()
-    return ''
+    print parser.parse_to_ont()
 
 
 def convert_to_external_format(file_path):
     parser = ONTParser(file(file_path))
-    parser.parse_to_owl()
-    return ''
+    print parser.parse_to_owl()
 
 
 if __name__ == '__main__':

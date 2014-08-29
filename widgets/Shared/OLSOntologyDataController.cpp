@@ -159,6 +159,16 @@ void OLSOntologyDataController::deserialize(const QVariant &json) {
   }
 
   normalize();
+  updateCategories();
+}
+
+void OLSOntologyDataController::updateCategories() {
+
+    foreach (OLSOntologyRelationData *relation, m_relationsList) {
+        if (!m_categories.keys().contains(relation->name)) {
+            m_categories.insert(relation->name, QVariantMap());
+        }
+    }
 }
 
 // data source
@@ -261,6 +271,21 @@ OLSOntologyNodeData *OLSOntologyDataController::findNode(const QString &nodeName
   return NULL;
 }
 
+QList<QString> OLSOntologyDataController::categoryNames() const {
+
+    return m_categories.keys();
+}
+
+QVariantMap OLSOntologyDataController::getCategory(const QString &categoryName) const {
+
+    return m_categories.value(categoryName, QVariantMap());
+}
+
+void OLSOntologyDataController::setCategory(const QString &categoryName, QVariantMap category) {
+
+    m_categories.insert(categoryName, category);
+}
+
 QStringList OLSOntologyDataController::pathToNode(long id) {
 
   m_changedNodeIds.insert(id);
@@ -343,6 +368,8 @@ long OLSOntologyDataController::relationCreated(long sourceNodeId, long destinat
 
   m_changedRelationIds.insert(relation->id);
 
+  updateCategories();
+
   return relation->id;
 }
 
@@ -360,6 +387,8 @@ void OLSOntologyDataController::relationNameChanged(long relationId, const QStri
   relation->name = name;
 
   m_changedRelationIds.insert(relation->id);
+
+  updateCategories();
 }
 
 void OLSOntologyDataController::nodeAttributesChanged(long nodeId, const QVariantMap &attributes) {

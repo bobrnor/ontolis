@@ -17,8 +17,9 @@ class OLSOntologyGraphNodeItem : public QObject, public QGraphicsRectItem, publi
     QColor m_backgroundColor;
     QColor m_textColor;
     QString m_shapeName;
+    QImage m_image;
 
-  protected:
+  public:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     QVariant itemChange(GraphicsItemChange change, const QVariant &value);
 
